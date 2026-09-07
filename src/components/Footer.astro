@@ -1,122 +1,520 @@
----
-const currentYear = new Date().getFullYear();
----
+<footer class="footer">
 
-<footer class="bg-[#173b2a] text-white">
-  <div class="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8">
+  <!-- HUGE BRAND MARK -->
+  <div class="footer-watermark" aria-hidden="true">
+    B
+  </div>
 
-    <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+  <div class="container footer-main">
 
-      <!-- Brand -->
-      <div class="lg:col-span-2">
-        <div class="flex items-center gap-3">
-          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-white text-[#173b2a]">
-            <span class="font-serif text-xl">B</span>
-          </div>
+    <!-- BRAND / STATEMENT -->
+    <div class="footer-brand">
 
-          <div>
-            <div class="font-serif text-2xl font-bold">
-              Best In Lawn
-            </div>
+      <div class="footer-mark">
+        B
+      </div>
 
-            <div class="mt-1 text-xs uppercase tracking-[0.18em] text-white/60">
-              Lawn • Cabin • Commercial
-            </div>
-          </div>
-        </div>
+      <div class="eyebrow">
+        Best In Lawn
+      </div>
 
-        <p class="mt-6 max-w-md leading-7 text-white/70">
-          Professional lawn and property care with attention to detail,
-          dependable service, and a commitment to helping your property
-          look its best.
-        </p>
+      <h2 class="display">
+        BEST<br />
+        IN<br />
+        <span>LAWN.</span>
+      </h2>
 
-        <a
-          href="/contact"
-          class="mt-7 inline-flex rounded-full bg-white px-6 py-3 font-bold text-[#173b2a] transition hover:-translate-y-0.5 hover:bg-[#f7f4ec]"
-        >
-          Get a Free Estimate
+      <p class="footer-tagline">
+        Lawn • Cabin • Property Care
+      </p>
+
+    </div>
+
+
+    <!-- LINKS -->
+    <div class="footer-links">
+
+      <div class="footer-column">
+        <span class="footer-label">Explore</span>
+
+        <a href="/">Home <span>↗</span></a>
+
+        <a href="/services/lawn-care/">
+          Lawn Care <span>↗</span>
+        </a>
+
+        <a href="/services/cabin-care/">
+          Cabin Care <span>↗</span>
+        </a>
+
+        <a href="/services/commercial/">
+          Commercial <span>↗</span>
         </a>
       </div>
 
-      <!-- Services -->
-      <div>
-        <h3 class="text-lg font-bold">
-          Services
-        </h3>
 
-        <ul class="mt-5 space-y-3 text-sm text-white/70">
-          <li>
-            <a href="/services/lawn-care" class="transition hover:text-white">
-              Lawn Care
-            </a>
-          </li>
+      <div class="footer-column">
+        <span class="footer-label">Service Areas</span>
 
-          <li>
-            <a href="/services/cabin-care" class="transition hover:text-white">
-              Cabin Care
-            </a>
-          </li>
+        <a href="/areas/fargo/">
+          Fargo <span>↗</span>
+        </a>
 
-          <li>
-            <a href="/services/commercial" class="transition hover:text-white">
-              Commercial Properties
-            </a>
-          </li>
-        </ul>
+        <span>Moorhead</span>
+        <span>West Fargo</span>
+        <span>Horace</span>
+        <span>Harwood</span>
+
+        <a href="/areas/nisswa/">
+          Nisswa <span>↗</span>
+        </a>
+
+        <span>Lakes Area</span>
       </div>
 
-      <!-- Areas -->
-      <div>
-        <h3 class="text-lg font-bold">
-          Service Areas
-        </h3>
 
-        <ul class="mt-5 space-y-3 text-sm text-white/70">
-          <li>Fargo</li>
-          <li>Moorhead</li>
-          <li>West Fargo</li>
-          <li>Horace</li>
-          <li>Harwood</li>
-          <li>Lakes Area</li>
-        </ul>
+      <div class="footer-column contact-column">
+        <span class="footer-label">Contact</span>
+
+        <a href="tel:+17012386904" class="contact-link">
+          (701) 238-6904
+        </a>
+
+        <a
+          href="mailto:bestinlawn@gmail.com"
+          class="contact-link email"
+        >
+          bestinlawn@gmail.com
+        </a>
+
+        <span class="contact-note">
+          Let's make your property<br />
+          the best on the block.
+        </span>
       </div>
+
     </div>
 
-    <!-- Contact -->
-    <div class="mt-14 grid gap-6 border-t border-white/10 pt-8 sm:grid-cols-2">
-
-      <div>
-        <p class="text-xs font-bold uppercase tracking-[0.15em] text-white/50">
-          Contact
-        </p>
-
-        <div class="mt-3 flex flex-col gap-2 text-sm">
-          <a
-            href="tel:7012386904"
-            class="font-semibold transition hover:text-[#c7a45b]"
-          >
-            (701) 238-6904
-          </a>
-
-          <a
-            href="mailto:bestinlawn@gmail.com"
-            class="text-white/70 transition hover:text-white"
-          >
-            bestinlawn@gmail.com
-          </a>
-        </div>
-      </div>
-
-      <div class="sm:text-right">
-        <p class="text-sm text-white/50">
-          © {currentYear} Best In Lawn. All rights reserved.
-        </p>
-
-        <p class="mt-2 text-xs text-white/40">
-          Professional property care in the Fargo–Moorhead area.
-        </p>
-      </div>
-    </div>
   </div>
+
+
+  <!-- BOTTOM BAR -->
+  <div class="footer-bottom">
+
+    <div>
+      © {new Date().getFullYear()} Best In Lawn
+    </div>
+
+    <div class="footer-bottom-center">
+      Lawn • Cabin • Property Care
+    </div>
+
+    <div>
+      Built for properties worth caring about.
+    </div>
+
+  </div>
+
 </footer>
+
+
+<style>
+
+  /* =========================================
+     FOOTER
+  ========================================= */
+
+  .footer {
+    position: relative;
+    overflow: hidden;
+    background: var(--green-dark);
+    color: white;
+  }
+
+
+  /* =========================================
+     GIANT WATERMARK
+  ========================================= */
+
+  .footer-watermark {
+    position: absolute;
+    right: -2vw;
+    bottom: -10vw;
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(25rem, 55vw, 65rem);
+    font-weight: 900;
+    line-height: 0.7;
+    letter-spacing: -0.13em;
+
+    color: rgba(255,255,255,0.025);
+
+    pointer-events: none;
+    user-select: none;
+  }
+
+
+  /* =========================================
+     MAIN FOOTER
+  ========================================= */
+
+  .footer-main {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 100px;
+
+    padding-top: 140px;
+    padding-bottom: 120px;
+  }
+
+
+  /* =========================================
+     BRAND
+  ========================================= */
+
+  .footer-brand {
+    position: relative;
+  }
+
+
+  .footer-mark {
+    width: 58px;
+    height: 58px;
+
+    display: grid;
+    place-items: center;
+
+    margin-bottom: 32px;
+
+    background: white;
+    color: var(--green-dark);
+
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+
+  .footer-brand .eyebrow {
+    color: #91ad9a;
+  }
+
+
+  .footer-brand h2 {
+    margin: 28px 0 30px;
+
+    font-size: clamp(
+      5rem,
+      10vw,
+      11rem
+    );
+
+    letter-spacing: -0.08em;
+  }
+
+
+  .footer-brand h2 span {
+    color: var(--sage);
+  }
+
+
+  .footer-tagline {
+    margin: 0;
+
+    color: #91ad9a;
+
+    font-size: 0.68rem;
+    font-weight: 800;
+
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+
+  /* =========================================
+     LINK AREA
+  ========================================= */
+
+  .footer-links {
+    display: grid;
+
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    gap: 45px;
+
+    align-self: end;
+  }
+
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 5px;
+  }
+
+
+  .footer-label {
+    display: block;
+
+    margin-bottom: 22px;
+
+    color: #7f9a87;
+
+    font-size: 0.62rem;
+    font-weight: 900;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+
+  .footer-column a,
+  .footer-column > span:not(.footer-label) {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 7px 0;
+
+    color: #e7eee9;
+
+    font-size: 0.82rem;
+    font-weight: 600;
+
+    line-height: 1.5;
+
+    transition:
+      color 180ms ease,
+      transform 180ms ease;
+  }
+
+
+  .footer-column a:hover {
+    color: white;
+
+    transform: translateX(5px);
+  }
+
+
+  .footer-column a span {
+    opacity: 0;
+
+    font-size: 0.9rem;
+
+    transition: opacity 180ms ease;
+  }
+
+
+  .footer-column a:hover span {
+    opacity: 1;
+  }
+
+
+  /* =========================================
+     CONTACT
+  ========================================= */
+
+  .contact-column .contact-link {
+    color: white;
+
+    font-size: 0.92rem;
+    font-weight: 800;
+  }
+
+
+  .contact-column .email {
+    word-break: break-word;
+  }
+
+
+  .contact-note {
+    margin-top: 25px;
+
+    color: #7f9a87 !important;
+
+    font-size: 0.75rem !important;
+    font-weight: 500 !important;
+
+    line-height: 1.7 !important;
+  }
+
+
+  /* =========================================
+     BOTTOM BAR
+  ========================================= */
+
+  .footer-bottom {
+    position: relative;
+    z-index: 3;
+
+    width: min(
+      1400px,
+      calc(100% - 40px)
+    );
+
+    margin-inline: auto;
+
+    padding: 23px 0;
+
+    border-top:
+      1px solid
+      rgba(255,255,255,0.13);
+
+    display: grid;
+
+    grid-template-columns:
+      1fr
+      auto
+      1fr;
+
+    align-items: center;
+
+    gap: 20px;
+
+    color: #718278;
+
+    font-size: 0.58rem;
+    font-weight: 800;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+
+  .footer-bottom-center {
+    color: #91a399;
+
+    text-align: center;
+  }
+
+
+  .footer-bottom > div:last-child {
+    text-align: right;
+  }
+
+
+  /* =========================================
+     TABLET
+  ========================================= */
+
+  @media (max-width: 1000px) {
+
+    .footer-main {
+      grid-template-columns: 1fr;
+
+      gap: 80px;
+
+      padding-top: 100px;
+      padding-bottom: 90px;
+    }
+
+
+    .footer-links {
+      max-width: 850px;
+    }
+
+  }
+
+
+  /* =========================================
+     MOBILE
+  ========================================= */
+
+  @media (max-width: 700px) {
+
+    .footer-watermark {
+      right: -20vw;
+      bottom: -5vw;
+
+      font-size: 28rem;
+    }
+
+
+    .footer-main {
+      gap: 65px;
+
+      padding-top: 75px;
+      padding-bottom: 70px;
+    }
+
+
+    .footer-brand h2 {
+      font-size: clamp(
+        4.5rem,
+        22vw,
+        7rem
+      );
+    }
+
+
+    .footer-links {
+      grid-template-columns: 1fr 1fr;
+
+      gap: 55px 30px;
+    }
+
+
+    .contact-column {
+      grid-column: 1 / -1;
+
+      max-width: 400px;
+    }
+
+
+    .footer-bottom {
+      width: calc(100% - 28px);
+
+      grid-template-columns: 1fr;
+
+      gap: 8px;
+
+      padding: 20px 0;
+    }
+
+
+    .footer-bottom-center {
+      text-align: left;
+    }
+
+
+    .footer-bottom > div:last-child {
+      text-align: left;
+    }
+
+  }
+
+
+  /* =========================================
+     SMALL PHONES
+  ========================================= */
+
+  @media (max-width: 430px) {
+
+    .footer-links {
+      grid-template-columns: 1fr;
+    }
+
+
+    .contact-column {
+      grid-column: auto;
+    }
+
+
+    .footer-watermark {
+      font-size: 22rem;
+      right: -25vw;
+    }
+
+  }
+
+</style>
