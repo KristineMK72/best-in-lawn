@@ -1,124 +1,480 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const title = "Professional Lawn & Cabin Care | Best In Lawn";
-const description = "Best In Lawn provides a high standard of lawn and cabin care services with a commitment to excellence. Serving Fargo, Moorhead, and the Lakes Area.";
+const title = 'Best In Lawn | Lawn, Cabin & Commercial Care';
+const description =
+  'Professional lawn care, cabin care, and commercial property maintenance serving Fargo, Moorhead, West Fargo, and the surrounding Lakes Area.';
 ---
 
 <BaseLayout title={title} description={description}>
-  
-  <!-- HERO SECTION WITH LOGO -->
-  <section class="relative bg-[#0f172a] h-[70vh] min-h-[500px] flex flex-col items-center justify-center">
-    <div class="absolute inset-0 overflow-hidden">
-      <!-- Grass background -->
-      <img src="https://images.unsplash.com/photo-1592424001807-160751307d88?q=80&w=2000&auto=format&fit=crop" alt="Green grass" class="w-full h-full object-cover opacity-60" />
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden bg-[#173b2a]">
+
+    <div class="absolute inset-0">
+      <img
+        src="https://images.unsplash.com/photo-1592424001807-160751307d88?q=80&w=2200&auto=format&fit=crop"
+        alt="Freshly maintained green lawn"
+        class="h-full w-full object-cover opacity-40"
+      />
+
+      <div class="absolute inset-0 bg-gradient-to-r from-[#0e291d]/95 via-[#173b2a]/80 to-[#173b2a]/30"></div>
     </div>
-    
-    <div class="relative z-10 flex flex-col items-center">
-      <!-- The Logo Image (Make sure logo.png is in your public folder!) -->
-      <img src="/logo.png" alt="Best In Lawn Est 2023" class="w-64 h-64 md:w-80 md:h-80 object-contain drop-shadow-2xl mb-8" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-      
-      <!-- Fallback text just in case the logo image doesn't load immediately -->
-      <div class="hidden text-center bg-white p-8 rounded-full shadow-2xl border-8 border-[#1b6b2b]">
-        <h1 class="text-4xl font-black text-[#1b6b2b] uppercase tracking-tighter">Best In Lawn</h1>
-        <p class="text-sm font-bold uppercase tracking-widest mt-2">Est. 2023</p>
+
+    <div class="relative mx-auto grid min-h-[680px] max-w-7xl items-center gap-12 px-5 py-24 sm:px-6 lg:grid-cols-2 lg:px-8">
+
+      <div class="max-w-2xl">
+
+        <p class="mb-5 text-sm font-bold uppercase tracking-[0.2em] text-[#c7a45b]">
+          Professional Property Care
+        </p>
+
+        <h1 class="text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
+          Your property deserves to look its best.
+        </h1>
+
+        <p class="mt-7 max-w-xl text-lg leading-8 text-white/80 sm:text-xl">
+          Reliable lawn, cabin, and commercial property care for homeowners
+          and businesses throughout the Fargo–Moorhead area and surrounding
+          communities.
+        </p>
+
+        <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+
+          <a
+            href="/contact"
+            class="inline-flex items-center justify-center rounded-full bg-white px-7 py-4 font-bold text-[#173b2a] shadow-xl transition hover:-translate-y-1 hover:bg-[#f7f4ec]"
+          >
+            Get a Free Estimate
+            <span class="ml-2">→</span>
+          </a>
+
+          <a
+            href="#services"
+            class="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-7 py-4 font-bold text-white backdrop-blur-sm transition hover:bg-white/20"
+          >
+            Explore Services
+          </a>
+
+        </div>
+
       </div>
+
+      <!-- Hero logo panel -->
+      <div class="hidden justify-center lg:flex">
+        <div class="relative">
+
+          <div class="absolute -inset-6 rounded-full border border-white/10"></div>
+          <div class="absolute -inset-12 rounded-full border border-white/5"></div>
+
+          <div class="relative flex h-80 w-80 items-center justify-center rounded-full bg-white/95 p-10 shadow-2xl">
+            <img
+              src="/logo.png"
+              alt="Best In Lawn"
+              class="h-full w-full object-contain"
+            />
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- ABOUT BIL SECTION -->
-  <section class="py-20 bg-gray-100">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-white rounded-3xl shadow-xl p-10 md:p-16 text-center border-t-8 border-[#1b6b2b]">
-        <h2 class="text-3xl font-black uppercase mb-8 inline-block border-b-4 border-black pb-2">About BIL</h2>
-        <div class="space-y-6 text-lg md:text-xl font-bold leading-relaxed text-gray-800 uppercase">
-          <p>
-            Our company provides a high standard of lawn and cabin care services with a commitment to excellence. We strive to exceed our customers expectations with our quality service, attention to detail, and reliable customer service.
-          </p>
-          <p>
-            We use the latest tools and techniques to ensure the best results for each project. Our team is highly experienced, insured, and dedicated to providing superior results that will leave you with a beautiful, healthy lawn and cabin.
-          </p>
+
+  <!-- TRUST BAR -->
+  <section class="border-b border-[#dfe6dd] bg-white">
+    <div class="mx-auto grid max-w-7xl grid-cols-2 divide-x divide-[#dfe6dd] px-5 sm:grid-cols-4 sm:px-6 lg:px-8">
+
+      <div class="px-4 py-7 text-center">
+        <div class="font-serif text-xl text-[#173b2a]">Reliable</div>
+        <div class="mt-1 text-xs font-semibold uppercase tracking-wider text-[#657168]">
+          Dependable Service
         </div>
       </div>
+
+      <div class="px-4 py-7 text-center">
+        <div class="font-serif text-xl text-[#173b2a]">Experienced</div>
+        <div class="mt-1 text-xs font-semibold uppercase tracking-wider text-[#657168]">
+          Attention to Detail
+        </div>
+      </div>
+
+      <div class="px-4 py-7 text-center">
+        <div class="font-serif text-xl text-[#173b2a]">Local</div>
+        <div class="mt-1 text-xs font-semibold uppercase tracking-wider text-[#657168]">
+          Community Focused
+        </div>
+      </div>
+
+      <div class="px-4 py-7 text-center">
+        <div class="font-serif text-xl text-[#173b2a]">Free Estimates</div>
+        <div class="mt-1 text-xs font-semibold uppercase tracking-wider text-[#657168]">
+          Let's Talk
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- OUR SERVICES SECTION -->
-  <section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-4xl font-black uppercase mb-4 inline-block border-b-4 border-black pb-2">Our Services</h2>
-      <p class="text-xl font-bold uppercase text-gray-600 mb-16">We offer an array of lawn services. Contact us today to customize our services to meet your needs.</p>
-      
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
-        <!-- Lawn Care -->
-        <div class="bg-gray-100 p-8 rounded-xl shadow-md border-t-4 border-[#1b6b2b]">
-          <h3 class="text-2xl font-black uppercase mb-4">Lawn Care</h3>
-          <p class="font-bold text-gray-700 text-sm uppercase leading-relaxed mb-4">
-            Our lawn care service is designed to provide you with a beautiful and healthy lawn that you can enjoy without the hassle of maintaining it yourself.
+
+  <!-- INTRO -->
+  <section class="bg-[#f7f4ec] py-24">
+    <div class="section-wrap">
+
+      <div class="mx-auto max-w-3xl text-center">
+
+        <p class="eyebrow">
+          A better-looking property starts with the details.
+        </p>
+
+        <h2 class="mt-4 text-4xl font-bold leading-tight text-[#173b2a] sm:text-5xl">
+          Spend your time enjoying your property.
+          <span class="italic text-[#477b50]">We'll handle the care.</span>
+        </h2>
+
+        <p class="mt-7 text-lg leading-8 text-[#657168]">
+          From routine lawn maintenance to exterior cabin care and
+          commercial property service, Best In Lawn helps keep your
+          property looking cared for season after season.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SERVICES -->
+  <section id="services" class="bg-white py-24">
+    <div class="section-wrap">
+
+      <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+
+        <div>
+          <p class="eyebrow">
+            What We Do
           </p>
-          <p class="font-bold text-gray-700 text-sm uppercase leading-relaxed">
-            Jordan is an experienced professional who is equipped with the tools and expertise to provide comprehensive lawn care service, including mowing, trimming, fertilization, and weed control.
-          </p>
+
+          <h2 class="mt-3 text-4xl font-bold text-[#173b2a] sm:text-5xl">
+            Services built around your property.
+          </h2>
         </div>
+
+        <a
+          href="/contact"
+          class="font-bold text-[#477b50] transition hover:text-[#173b2a]"
+        >
+          Request a custom service plan →
+        </a>
+
+      </div>
+
+
+      <div class="mt-12 grid gap-7 md:grid-cols-3">
+
+        <!-- Lawn -->
+        <a
+          href="/services/lawn-care"
+          class="group overflow-hidden rounded-3xl border border-[#dfe6dd] bg-[#f7f4ec] transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+        >
+
+          <div class="relative h-60 overflow-hidden">
+
+            <img
+              src="https://images.unsplash.com/photo-1558904541-efa843a96f01?q=80&w=1200&auto=format&fit=crop"
+              alt="Healthy green lawn"
+              class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            />
+
+            <div class="absolute inset-0 bg-gradient-to-t from-[#173b2a]/70 to-transparent"></div>
+
+            <span class="absolute bottom-5 left-5 rounded-full bg-white px-4 py-2 text-xs font-bold uppercase tracking-wider text-[#173b2a]">
+              Residential
+            </span>
+
+          </div>
+
+          <div class="p-7">
+
+            <h3 class="text-3xl font-bold text-[#173b2a]">
+              Lawn Care
+            </h3>
+
+            <p class="mt-4 leading-7 text-[#657168]">
+              Keep your lawn healthy, neat, and ready to enjoy with
+              dependable mowing, trimming, and seasonal maintenance.
+            </p>
+
+            <div class="mt-6 font-bold text-[#477b50]">
+              Explore Lawn Care →
+            </div>
+
+          </div>
+        </a>
+
+
+        <!-- Cabin -->
+        <a
+          href="/services/cabin-care"
+          class="group overflow-hidden rounded-3xl border border-[#dfe6dd] bg-[#f7f4ec] transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+        >
+
+          <div class="relative h-60 overflow-hidden">
+
+            <img
+              src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?q=80&w=1200&auto=format&fit=crop"
+              alt="Cabin exterior surrounded by trees"
+              class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            />
+
+            <div class="absolute inset-0 bg-gradient-to-t from-[#173b2a]/70 to-transparent"></div>
+
+            <span class="absolute bottom-5 left-5 rounded-full bg-white px-4 py-2 text-xs font-bold uppercase tracking-wider text-[#173b2a]">
+              Lakes Area
+            </span>
+
+          </div>
+
+          <div class="p-7">
+
+            <h3 class="text-3xl font-bold text-[#173b2a]">
+              Cabin Care
+            </h3>
+
+            <p class="mt-4 leading-7 text-[#657168]">
+              Take care of the outside of your cabin while you spend
+              more time enjoying the lake, woods, and everything around it.
+            </p>
+
+            <div class="mt-6 font-bold text-[#477b50]">
+              Explore Cabin Care →
+            </div>
+
+          </div>
+        </a>
+
 
         <!-- Commercial -->
-        <div class="bg-gray-100 p-8 rounded-xl shadow-md border-t-4 border-[#1b6b2b]">
-          <h3 class="text-2xl font-black uppercase mb-4">Commercial Properties</h3>
-          <p class="font-bold text-gray-700 text-sm uppercase leading-relaxed mb-4">
-            We offer top-quality lawn care services for commercial lots to ensure that your business always looks its best. We understand the importance of maintaining a clean and professional appearance.
-          </p>
-          <p class="font-bold text-gray-700 text-sm uppercase leading-relaxed">
-            With our regular maintenance program, you can rest assured that your lawn will always be healthy and well-maintained, allowing you to focus on running your business.
-          </p>
-        </div>
+        <a
+          href="/services/commercial"
+          class="group overflow-hidden rounded-3xl border border-[#dfe6dd] bg-[#f7f4ec] transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+        >
 
-        <!-- Cabin Care -->
-        <div class="bg-gray-100 p-8 rounded-xl shadow-md border-t-4 border-[#1b6b2b]">
-          <h3 class="text-2xl font-black uppercase mb-4">Exterior Cabin Care</h3>
-          <p class="font-bold text-gray-700 text-sm uppercase leading-relaxed mb-4">
-            Maintaining the exterior of your cabin is crucial to ensure its longevity and aesthetic appeal. 
-          </p>
-          <p class="font-bold text-gray-700 text-sm uppercase leading-relaxed">
-            Let us help you make the most of your time away, call for a free estimate and customized service plan. By taking care of your cabin's exterior, you can enjoy its beauty and functionality for years to come.
-          </p>
-        </div>
+          <div class="relative h-60 overflow-hidden">
+
+            <img
+              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1200&auto=format&fit=crop"
+              alt="Professionally maintained commercial property"
+              class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            />
+
+            <div class="absolute inset-0 bg-gradient-to-t from-[#173b2a]/70 to-transparent"></div>
+
+            <span class="absolute bottom-5 left-5 rounded-full bg-white px-4 py-2 text-xs font-bold uppercase tracking-wider text-[#173b2a]">
+              Businesses
+            </span>
+
+          </div>
+
+          <div class="p-7">
+
+            <h3 class="text-3xl font-bold text-[#173b2a]">
+              Commercial
+            </h3>
+
+            <p class="mt-4 leading-7 text-[#657168]">
+              Maintain a clean, professional first impression with
+              dependable care for commercial lots and properties.
+            </p>
+
+            <div class="mt-6 font-bold text-[#477b50]">
+              Explore Commercial →
+            </div>
+
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
 
-  <!-- CONTACT FORM SECTION -->
-  <section class="py-20 bg-black text-white">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl font-black uppercase mb-6 inline-block border-b-4 border-white pb-2">Contact Us</h2>
-      <p class="text-xl font-bold uppercase mb-12">Contact us today for your free estimate or questions.</p>
-      
-      <form class="text-left space-y-6">
-        <h3 class="font-black text-xl uppercase mb-4">Name</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <label class="block font-bold uppercase text-sm mb-2">First Name (Required)</label>
-            <input type="text" required class="w-full p-4 text-black focus:outline-none focus:ring-4 focus:ring-[#1b6b2b]" />
-          </div>
-          <div>
-            <label class="block font-bold uppercase text-sm mb-2">Last Name (Required)</label>
-            <input type="text" required class="w-full p-4 text-black focus:outline-none focus:ring-4 focus:ring-[#1b6b2b]" />
-          </div>
-        </div>
-        
-        <div>
-          <label class="block font-bold uppercase text-sm mb-2 mt-6">Email (Required)</label>
-          <input type="email" required class="w-full p-4 text-black focus:outline-none focus:ring-4 focus:ring-[#1b6b2b]" />
-        </div>
+
+  <!-- WHY BEST IN LAWN -->
+  <section class="bg-[#e8efe6] py-24">
+    <div class="section-wrap">
+
+      <div class="grid items-center gap-14 lg:grid-cols-2">
 
         <div>
-          <label class="block font-bold uppercase text-sm mb-2 mt-6">Message (Required)</label>
-          <textarea required rows="5" class="w-full p-4 text-black focus:outline-none focus:ring-4 focus:ring-[#1b6b2b]"></textarea>
+
+          <p class="eyebrow">
+            Why Best In Lawn
+          </p>
+
+          <h2 class="mt-4 text-4xl font-bold leading-tight text-[#173b2a] sm:text-5xl">
+            The little details make a big difference.
+          </h2>
+
+          <p class="mt-6 text-lg leading-8 text-[#657168]">
+            Your property is an investment. It should look like one.
+            We focus on dependable service, quality work, and the details
+            that make a property feel cared for.
+          </p>
+
+          <div class="mt-8 space-y-5">
+
+            <div class="flex gap-4">
+              <div class="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#173b2a] text-white">
+                ✓
+              </div>
+
+              <div>
+                <h3 class="font-bold text-[#173b2a]">
+                  Attention to detail
+                </h3>
+
+                <p class="mt-1 text-sm leading-6 text-[#657168]">
+                  We don't just check a box. We take pride in how the
+                  finished property looks.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#173b2a] text-white">
+                ✓
+              </div>
+
+              <div>
+                <h3 class="font-bold text-[#173b2a]">
+                  Reliable service
+                </h3>
+
+                <p class="mt-1 text-sm leading-6 text-[#657168]">
+                  Consistent property care means one less thing on
+                  your list.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#173b2a] text-white">
+                ✓
+              </div>
+
+              <div>
+                <h3 class="font-bold text-[#173b2a]">
+                  Service tailored to you
+                </h3>
+
+                <p class="mt-1 text-sm leading-6 text-[#657168]">
+                  We'll work with you to create a service plan that
+                  fits your property and your needs.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
         </div>
 
-        <button type="submit" class="mt-8 bg-white text-black font-black uppercase px-10 py-4 rounded-full hover:bg-gray-200 transition">
-          Send
-        </button>
-      </form>
+
+        <div class="relative">
+
+          <div class="overflow-hidden rounded-[2rem] shadow-2xl">
+            <img
+              src="https://images.unsplash.com/photo-1558521958-0a228e77e984?q=80&w=1400&auto=format&fit=crop"
+              alt="Beautifully maintained outdoor property"
+              class="h-[500px] w-full object-cover"
+            />
+          </div>
+
+          <div class="absolute -bottom-6 -left-4 rounded-2xl bg-white p-6 shadow-xl sm:-left-8">
+            <div class="font-serif text-3xl font-bold text-[#173b2a]">
+              Est. 2023
+            </div>
+
+            <div class="mt-1 text-xs font-bold uppercase tracking-wider text-[#657168]">
+              Proudly serving our communities
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVICE AREAS -->
+  <section class="bg-white py-24">
+    <div class="section-wrap text-center">
+
+      <p class="eyebrow">
+        Where We Work
+      </p>
+
+      <h2 class="mt-4 text-4xl font-bold text-[#173b2a] sm:text-5xl">
+        Serving your corner of the region.
+      </h2>
+
+      <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-[#657168]">
+        Best In Lawn provides property care throughout Fargo, Moorhead,
+        West Fargo, Horace, Harwood, the Lakes Area, and surrounding communities.
+      </p>
+
+
+      <div class="mx-auto mt-10 flex max-w-4xl flex-wrap justify-center gap-3">
+
+        {['Fargo', 'Moorhead', 'West Fargo', 'Horace', 'Harwood', 'Nisswa', 'Lakes Area'].map((area) => (
+          <span class="rounded-full border border-[#dfe6dd] bg-[#f7f4ec] px-5 py-3 text-sm font-semibold text-[#173b2a]">
+            {area}
+          </span>
+        ))}
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FINAL CTA -->
+  <section class="bg-[#173b2a] py-24">
+    <div class="mx-auto max-w-4xl px-5 text-center sm:px-6">
+
+      <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#c7a45b]">
+        Let's Get Started
+      </p>
+
+      <h2 class="mt-5 text-4xl font-bold leading-tight text-white sm:text-6xl">
+        Let's make your property the best on the block.
+      </h2>
+
+      <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/70">
+        Tell us what your property needs and we'll help you build
+        a service plan that works for you.
+      </p>
+
+      <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+
+        <a
+          href="/contact"
+          class="inline-flex items-center justify-center rounded-full bg-white px-7 py-4 font-bold text-[#173b2a] transition hover:-translate-y-1 hover:bg-[#f7f4ec]"
+        >
+          Get a Free Estimate
+          <span class="ml-2">→</span>
+        </a>
+
+        <a
+          href="tel:7012386904"
+          class="inline-flex items-center justify-center rounded-full border border-white/25 px-7 py-4 font-bold text-white transition hover:bg-white/10"
+        >
+          Call (701) 238-6904
+        </a>
+
+      </div>
+
     </div>
   </section>
 
