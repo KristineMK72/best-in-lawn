@@ -6,7 +6,7 @@ const services = [
     number: '01',
     title: 'Lawn Care',
     description:
-      'Consistent, professional lawn care that keeps your property looking sharp all season long.',
+      'Consistent, professional lawn care that keeps your property looking sharp and your lawn healthy all season long.',
     image:
       'https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1800&q=85',
     href: '/services/lawn-care/',
@@ -37,7 +37,7 @@ const services = [
 
 <BaseLayout
   title="Best In Lawn | Lawn, Cabin & Property Care"
-  description="Professional lawn, cabin and property care for homes, lake properties and businesses throughout the Lakes Area."
+  description="Professional lawn, cabin and property care for homes, lake properties and businesses."
 >
 
   <!-- =====================================================
@@ -45,6 +45,15 @@ const services = [
        ===================================================== -->
 
   <section class="hero">
+
+    <div class="hero-background image-wrap">
+      <img
+        src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=2400&q=90"
+        alt="Freshly maintained green lawn"
+      />
+    </div>
+
+    <div class="hero-overlay"></div>
 
     <div class="hero-content container">
 
@@ -75,7 +84,7 @@ const services = [
             cabins, lake homes and businesses.
           </p>
 
-          <a href="#estimate" class="luxury-button">
+          <a href="#estimate" class="luxury-button light">
             Get A Free Estimate
             <span class="arrow">↗</span>
           </a>
@@ -84,19 +93,14 @@ const services = [
 
       </div>
 
-    </div>
+      <div class="hero-bottom">
 
-
-    <div class="hero-image image-wrap">
-
-      <img
-        src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=2200&q=90"
-        alt="Beautiful professionally maintained lawn"
-      />
-
-      <div class="hero-image-label">
         <span>01</span>
+
         <span>PROPERTY CARE</span>
+
+        <span>EST. WITH PRIDE</span>
+
       </div>
 
     </div>
@@ -224,6 +228,112 @@ const services = [
 
 
   <!-- =====================================================
+       ABOUT BIL
+       GRASS BACKGROUND
+       ===================================================== -->
+
+  <section class="about">
+
+    <div class="about-background image-wrap">
+
+      <img
+        src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=2400&q=90"
+        alt=""
+        loading="lazy"
+      />
+
+    </div>
+
+    <div class="about-overlay"></div>
+
+
+    <div class="container about-inner">
+
+      <div class="about-card">
+
+        <div class="about-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=85"
+            alt="Beautifully maintained property"
+            loading="lazy"
+          />
+
+          <div class="about-image-label">
+            <span>03</span>
+            <span>ABOUT BIL</span>
+          </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+          <span class="section-number">
+            03 / ABOUT BIL
+          </span>
+
+          <h2 class="display">
+            A HIGHER<br />
+            STANDARD OF<br />
+            <span class="serif">CARE.</span>
+          </h2>
+
+
+          <p class="about-lead">
+            Best In Lawn provides a high standard of lawn
+            and cabin care with a commitment to excellence.
+          </p>
+
+
+          <p>
+            We strive to exceed our customers' expectations
+            through quality service, attention to detail and
+            dependable customer care.
+          </p>
+
+
+          <p>
+            We use the latest tools and techniques to deliver
+            beautiful results while treating every property
+            with the care and attention it deserves.
+          </p>
+
+
+          <div class="about-points">
+
+            <div>
+              <span>01</span>
+              <strong>QUALITY SERVICE</strong>
+            </div>
+
+            <div>
+              <span>02</span>
+              <strong>ATTENTION TO DETAIL</strong>
+            </div>
+
+            <div>
+              <span>03</span>
+              <strong>INSURED &amp; EXPERIENCED</strong>
+            </div>
+
+          </div>
+
+
+          <a href="/about/" class="text-link dark">
+            Learn More About Best In Lawn →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
        DIFFERENCE
        ===================================================== -->
 
@@ -234,7 +344,7 @@ const services = [
       <div class="difference-header">
 
         <span class="section-number">
-          03 / THE DIFFERENCE
+          04 / THE DIFFERENCE
         </span>
 
         <h2 class="display">
@@ -348,7 +458,7 @@ const services = [
       <div class="process-heading">
 
         <span class="section-number">
-          04 / HOW IT WORKS
+          05 / HOW IT WORKS
         </span>
 
         <h2 class="display">
@@ -427,7 +537,7 @@ const services = [
       <div>
 
         <span class="section-number">
-          05 / SERVICE AREAS
+          06 / SERVICE AREAS
         </span>
 
         <h2 class="display">
@@ -443,12 +553,9 @@ const services = [
 
       <div class="area-list">
 
-        <a href="/areas/fargo/">
-          Fargo
-          <span>↗</span>
-        </a>
-
         <span>Moorhead</span>
+
+        <span>Fargo</span>
 
         <span>West Fargo</span>
 
@@ -463,6 +570,8 @@ const services = [
 
         <span>Lakes Area</span>
 
+        <span>And More</span>
+
       </div>
 
     </div>
@@ -472,6 +581,7 @@ const services = [
 
   <!-- =====================================================
        FINAL CTA
+       GRASS BACKGROUND
        ===================================================== -->
 
   <section
@@ -479,7 +589,20 @@ const services = [
     id="estimate"
   >
 
-    <div class="container">
+    <div class="cta-background image-wrap">
+
+      <img
+        src="https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=2400&q=90"
+        alt=""
+        loading="lazy"
+      />
+
+    </div>
+
+    <div class="cta-overlay"></div>
+
+
+    <div class="container cta-inner">
 
       <span class="eyebrow">
         Ready when you are
@@ -529,58 +652,121 @@ const services = [
 <style>
 
 /* =========================================================
-   HERO
+   HERO — GRASS
    ========================================================= */
 
 .hero {
-  background: var(--cream);
+  position: relative;
+
+  min-height: 860px;
+
+  overflow: hidden;
+
+  color: white;
+
+  background: var(--green-dark);
+}
+
+.hero-background {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 0;
+}
+
+.hero-background img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7,28,18,0.48) 0%,
+      rgba(7,28,18,0.12) 35%,
+      rgba(7,28,18,0.72) 100%
+    );
 }
 
 .hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  min-height: 860px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
   padding-top: 50px;
-  padding-bottom: 42px;
+
+  padding-bottom: 30px;
 }
 
 .hero-top {
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
 
   padding-bottom: 25px;
 
-  border-bottom: 1px solid var(--line);
+  border-bottom:
+    1px solid
+    rgba(255,255,255,0.35);
 }
 
 .hero-location {
   font-size: 0.65rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 
-  color: var(--muted);
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
 }
 
 .hero-title {
   display: grid;
 
-  grid-template-columns: 1fr 260px;
+  grid-template-columns:
+    1fr
+    260px;
 
   gap: 50px;
 
   align-items: end;
 
   padding-top: 42px;
+
   padding-bottom: 48px;
 }
 
 .hero h1 {
   margin: 0;
 
-  font-size: clamp(
-    4.8rem,
-    11vw,
-    11rem
-  );
+  font-size:
+    clamp(
+      4.8rem,
+      11vw,
+      10rem
+    );
 
   line-height: 0.82;
 
@@ -588,7 +774,7 @@ const services = [
 }
 
 .hero h1 span:not(.period) {
-  color: var(--green);
+  color: var(--sage);
 }
 
 .hero .period {
@@ -602,53 +788,27 @@ const services = [
 .hero-side p {
   margin: 0 0 24px;
 
-  color: var(--muted);
+  color: rgba(255,255,255,0.86);
 
   font-size: 0.9rem;
 
   line-height: 1.7;
 }
 
-.hero-image {
-  height: min(68vh, 760px);
-
-  position: relative;
-}
-
-.hero-image::after {
-  content: '';
-
-  position: absolute;
-
-  inset: 0;
-
-  background:
-    linear-gradient(
-      to top,
-      rgba(7, 28, 18, 0.42),
-      transparent 42%
-    );
-
-  pointer-events: none;
-}
-
-.hero-image-label {
-  position: absolute;
-
-  z-index: 2;
-
-  bottom: 25px;
-
-  left: 30px;
-  right: 30px;
-
+.hero-bottom {
   display: flex;
 
   justify-content: space-between;
 
-  color: white;
+  align-items: center;
 
-  font-size: 0.65rem;
+  padding-top: 20px;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,0.35);
+
+  font-size: 0.62rem;
 
   font-weight: 900;
 
@@ -669,7 +829,9 @@ const services = [
 .statement-grid {
   display: grid;
 
-  grid-template-columns: 25% 1fr;
+  grid-template-columns:
+    25%
+    1fr;
 
   gap: 30px;
 }
@@ -677,11 +839,12 @@ const services = [
 .statement h2 {
   margin: 0;
 
-  font-size: clamp(
-    4rem,
-    8vw,
-    8.5rem
-  );
+  font-size:
+    clamp(
+      4rem,
+      8vw,
+      8.5rem
+    );
 
   line-height: 0.86;
 
@@ -720,7 +883,9 @@ const services = [
 .services-heading {
   display: grid;
 
-  grid-template-columns: 25% 1fr;
+  grid-template-columns:
+    25%
+    1fr;
 
   gap: 30px;
 
@@ -730,11 +895,12 @@ const services = [
 .services-heading h2 {
   margin: 0;
 
-  font-size: clamp(
-    3.8rem,
-    7.5vw,
-    8rem
-  );
+  font-size:
+    clamp(
+      3.8rem,
+      7.5vw,
+      8rem
+    );
 
   line-height: 0.88;
 
@@ -742,10 +908,11 @@ const services = [
 }
 
 .service-list {
-  width: min(
-    1250px,
-    calc(100% - 40px)
-  );
+  width:
+    min(
+      1250px,
+      calc(100% - 40px)
+    );
 
   margin: auto;
 }
@@ -774,7 +941,8 @@ const services = [
   transform: translateY(-5px);
 
   box-shadow:
-    0 20px 50px rgba(7, 28, 18, 0.08);
+    0 20px 50px
+    rgba(7,28,18,0.08);
 }
 
 .service-item:nth-child(even) {
@@ -825,11 +993,12 @@ const services = [
 
   color: var(--green);
 
-  font-size: clamp(
-    3rem,
-    5vw,
-    5.8rem
-  );
+  font-size:
+    clamp(
+      3rem,
+      5vw,
+      5.8rem
+    );
 
   line-height: 0.88;
 
@@ -866,6 +1035,225 @@ const services = [
 
 
 /* =========================================================
+   ABOUT BIL — GRASS FIELD
+   ========================================================= */
+
+.about {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 120px 0;
+
+  min-height: 900px;
+
+  background: var(--green-dark);
+}
+
+.about-background {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 0;
+}
+
+.about-background img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transform: scale(1.03);
+}
+
+.about-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7,28,18,0.78),
+      rgba(7,28,18,0.32)
+    );
+}
+
+.about-inner {
+  position: relative;
+
+  z-index: 2;
+}
+
+.about-card {
+  display: grid;
+
+  grid-template-columns:
+    0.82fr
+    1.18fr;
+
+  max-width: 1250px;
+
+  margin: auto;
+
+  background: rgba(255,255,255,0.96);
+
+  box-shadow:
+    0 30px 90px
+    rgba(0,0,0,0.22);
+}
+
+.about-image {
+  position: relative;
+
+  min-height: 700px;
+
+  overflow: hidden;
+}
+
+.about-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+.about-image-label {
+  position: absolute;
+
+  left: 25px;
+
+  right: 25px;
+
+  bottom: 24px;
+
+  z-index: 2;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  color: white;
+
+  font-size: 0.62rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+
+  text-shadow:
+    0 1px 10px
+    rgba(0,0,0,0.35);
+}
+
+.about-content {
+  padding: 70px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.about-content h2 {
+  margin: 28px 0 38px;
+
+  font-size:
+    clamp(
+      3.8rem,
+      6vw,
+      7rem
+    );
+
+  line-height: 0.86;
+
+  letter-spacing: -0.055em;
+}
+
+.about-content h2 .serif {
+  color: var(--green);
+}
+
+.about-content p {
+  max-width: 560px;
+
+  margin: 0 0 18px;
+
+  color: var(--muted);
+
+  line-height: 1.8;
+}
+
+.about-content .about-lead {
+  color: var(--text);
+
+  font-size: 1.1rem;
+
+  line-height: 1.75;
+
+  margin-bottom: 25px;
+}
+
+.about-points {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap: 20px;
+
+  margin: 42px 0 38px;
+
+  padding-top: 25px;
+
+  border-top:
+    1px solid var(--line);
+}
+
+.about-points div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.about-points span {
+  color: var(--green);
+
+  font-size: 1.8rem;
+
+  font-weight: 900;
+
+  letter-spacing: -0.08em;
+}
+
+.about-points strong {
+  font-size: 0.62rem;
+
+  line-height: 1.35;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+.text-link.dark {
+  color: var(--green);
+}
+
+
+/* =========================================================
    DIFFERENCE
    ========================================================= */
 
@@ -880,7 +1268,9 @@ const services = [
 .difference-header {
   display: grid;
 
-  grid-template-columns: 25% 1fr;
+  grid-template-columns:
+    25%
+    1fr;
 
   gap: 30px;
 }
@@ -888,11 +1278,12 @@ const services = [
 .difference-header h2 {
   margin: 0;
 
-  font-size: clamp(
-    4.2rem,
-    9vw,
-    10rem
-  );
+  font-size:
+    clamp(
+      4.2rem,
+      9vw,
+      10rem
+    );
 
   line-height: 0.84;
 
@@ -907,7 +1298,7 @@ const services = [
   display: grid;
 
   grid-template-columns:
-    repeat(3, 1fr);
+    repeat(3,1fr);
 
   margin-top: 90px;
 
@@ -1003,11 +1394,12 @@ const services = [
 .feature-overlay h2 {
   margin: 25px 0 0;
 
-  font-size: clamp(
-    3.5rem,
-    7vw,
-    8rem
-  );
+  font-size:
+    clamp(
+      3.5rem,
+      7vw,
+      8rem
+    );
 
   line-height: 0.88;
 
@@ -1032,7 +1424,9 @@ const services = [
 .process-heading {
   display: grid;
 
-  grid-template-columns: 25% 1fr;
+  grid-template-columns:
+    25%
+    1fr;
 
   gap: 30px;
 }
@@ -1040,11 +1434,12 @@ const services = [
 .process-heading h2 {
   margin: 0;
 
-  font-size: clamp(
-    3.8rem,
-    7.5vw,
-    8rem
-  );
+  font-size:
+    clamp(
+      3.8rem,
+      7.5vw,
+      8rem
+    );
 
   line-height: 0.87;
 
@@ -1059,7 +1454,7 @@ const services = [
   display: grid;
 
   grid-template-columns:
-    repeat(3, 1fr);
+    repeat(3,1fr);
 
   margin-top: 100px;
 
@@ -1122,7 +1517,9 @@ const services = [
 .areas-grid {
   display: grid;
 
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns:
+    1fr
+    1fr;
 
   gap: 90px;
 }
@@ -1130,11 +1527,12 @@ const services = [
 .areas h2 {
   margin: 30px 0 0;
 
-  font-size: clamp(
-    3.5rem,
-    6.5vw,
-    7rem
-  );
+  font-size:
+    clamp(
+      3.5rem,
+      6.5vw,
+      7rem
+    );
 
   line-height: 0.88;
 
@@ -1181,25 +1579,77 @@ const services = [
 
 
 /* =========================================================
-   CTA
+   FINAL CTA — GRASS
    ========================================================= */
 
 .final-cta {
-  padding: 150px 0;
+  position: relative;
+
+  min-height: 760px;
+
+  overflow: hidden;
+
+  display: flex;
+
+  align-items: center;
 
   background: var(--green-dark);
 
   color: white;
 }
 
+.cta-background {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 0;
+}
+
+.cta-background img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+.cta-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7,28,18,0.82),
+      rgba(7,28,18,0.48)
+    );
+}
+
+.cta-inner {
+  position: relative;
+
+  z-index: 2;
+
+  padding-top: 120px;
+
+  padding-bottom: 120px;
+}
+
 .final-cta h2 {
   margin: 32px 0;
 
-  font-size: clamp(
-    4.2rem,
-    9vw,
-    10rem
-  );
+  font-size:
+    clamp(
+      4.2rem,
+      9vw,
+      10rem
+    );
 
   line-height: 0.84;
 
@@ -1215,7 +1665,7 @@ const services = [
 
   margin-bottom: 32px;
 
-  color: #aebdb3;
+  color: rgba(255,255,255,0.78);
 
   line-height: 1.8;
 }
@@ -1268,21 +1718,34 @@ const services = [
   transform: scale(1.035);
 }
 
+.about-card:hover
+.about-image img {
+  transform: scale(1.025);
+}
+
 
 /* =========================================================
-   RESPONSIVE — TABLET
+   TABLET
    ========================================================= */
 
 @media (max-width: 900px) {
 
+  .hero {
+    min-height: 760px;
+  }
+
+  .hero-content {
+    min-height: 760px;
+  }
+
   .hero-title,
   .statement-grid,
   .services-heading,
+  .about-card,
   .difference-header,
   .process-heading {
     grid-template-columns: 1fr;
   }
-
 
   .hero h1 {
     font-size:
@@ -1293,16 +1756,14 @@ const services = [
       );
   }
 
-
   .statement,
   .services,
+  .about,
   .difference,
   .process,
-  .areas,
-  .final-cta {
+  .areas {
     padding: 90px 0;
   }
-
 
   .statement-copy {
     margin-left: 0;
@@ -1310,37 +1771,53 @@ const services = [
     margin-top: 35px;
   }
 
+  .about {
+    min-height: auto;
+  }
+
+  .about-card {
+    max-width: 700px;
+  }
+
+  .about-image {
+    min-height: 450px;
+  }
+
+  .about-content {
+    padding: 55px;
+  }
+
+  .about-content h2 {
+    font-size:
+      clamp(
+        3.7rem,
+        12vw,
+        7rem
+      );
+  }
 
   .service-item,
   .service-item:nth-child(even) {
     grid-template-columns: 1fr;
   }
 
-
   .service-item:nth-child(even)
   .service-image {
     order: 0;
   }
 
-
   .service-image {
     min-height: 350px;
   }
-
 
   .difference-grid,
   .process-grid {
     grid-template-columns: 1fr;
   }
 
-
   .difference-item,
-  .difference-item:not(:first-child),
-  .process-item,
-  .process-item:not(:first-child) {
-
-    padding:
-      35px 0;
+  .difference-item:not(:first-child) {
+    padding: 35px 0;
 
     border-right: 0;
 
@@ -1349,14 +1826,15 @@ const services = [
       rgba(255,255,255,0.25);
   }
 
-
   .process-item,
   .process-item:not(:first-child) {
+    padding: 35px 0;
 
-    border-color:
-      var(--line);
+    border-right: 0;
+
+    border-bottom:
+      1px solid var(--line);
   }
-
 
   .areas-grid {
     grid-template-columns: 1fr;
@@ -1364,21 +1842,30 @@ const services = [
     gap: 60px;
   }
 
+  .final-cta {
+    min-height: 650px;
+  }
+
 }
 
 
 /* =========================================================
-   RESPONSIVE — MOBILE
+   MOBILE
    ========================================================= */
 
 @media (max-width: 600px) {
 
-  .hero-content {
-    padding-top: 30px;
-
-    padding-bottom: 30px;
+  .hero {
+    min-height: 680px;
   }
 
+  .hero-content {
+    min-height: 680px;
+
+    padding-top: 30px;
+
+    padding-bottom: 25px;
+  }
 
   .hero-top {
     align-items: flex-start;
@@ -1386,20 +1873,17 @@ const services = [
     gap: 20px;
   }
 
-
   .hero-location {
     text-align: right;
 
     max-width: 120px;
   }
 
-
   .hero-title {
     padding-top: 32px;
 
     padding-bottom: 34px;
   }
-
 
   .hero h1 {
     font-size:
@@ -1412,30 +1896,44 @@ const services = [
     letter-spacing: -0.07em;
   }
 
-
-  .hero-image {
-    height: 55vh;
-
-    min-height: 400px;
+  .hero-side {
+    padding-top: 25px;
   }
 
+  .hero-bottom {
+    font-size: 0.55rem;
+
+    gap: 15px;
+  }
+
+  .hero-bottom span:last-child {
+    display: none;
+  }
+
+  .statement h2,
+  .services-heading h2,
+  .process-heading h2 {
+    font-size:
+      clamp(
+        3.2rem,
+        14vw,
+        6rem
+      );
+  }
 
   .service-list {
     width:
       calc(100% - 28px);
   }
 
-
   .service-info {
     padding:
       35px 25px 45px;
   }
 
-
   .service-meta {
     margin-bottom: 32px;
   }
-
 
   .service-info h3 {
     font-size:
@@ -1446,6 +1944,69 @@ const services = [
       );
   }
 
+  .about {
+    padding: 55px 0;
+  }
+
+  .about-card {
+    width:
+      calc(100% - 28px);
+  }
+
+  .about-image {
+    min-height: 360px;
+  }
+
+  .about-content {
+    padding:
+      40px 28px 48px;
+  }
+
+  .about-content h2 {
+    font-size:
+      clamp(
+        3.2rem,
+        14vw,
+        5.8rem
+      );
+
+    margin-top: 22px;
+
+    margin-bottom: 30px;
+  }
+
+  .about-points {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+
+    margin-top: 35px;
+  }
+
+  .about-points div {
+    display: grid;
+
+    grid-template-columns:
+      45px
+      1fr;
+
+    align-items: center;
+
+    gap: 10px;
+  }
+
+  .about-points span {
+    font-size: 1.5rem;
+  }
+
+  .difference-header h2 {
+    font-size:
+      clamp(
+        3.7rem,
+        16vw,
+        7rem
+      );
+  }
 
   .feature-image {
     height: 70vh;
@@ -1453,11 +2014,9 @@ const services = [
     min-height: 500px;
   }
 
-
   .feature-overlay {
     padding: 28px;
   }
-
 
   .feature-overlay h2 {
     font-size:
@@ -1468,7 +2027,6 @@ const services = [
       );
   }
 
-
   .areas h2 {
     font-size:
       clamp(
@@ -1478,6 +2036,15 @@ const services = [
       );
   }
 
+  .final-cta {
+    min-height: 620px;
+  }
+
+  .cta-inner {
+    padding-top: 90px;
+
+    padding-bottom: 90px;
+  }
 
   .final-cta h2 {
     font-size:
@@ -1487,7 +2054,6 @@ const services = [
         7rem
       );
   }
-
 
   .cta-actions {
     align-items: flex-start;
