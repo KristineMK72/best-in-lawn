@@ -1,0 +1,33 @@
+---
+const currentYear = new Date().getFullYear();
+---
+<footer class="bg-[#0f172a] text-[#f8fafc] py-12 mt-auto">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="text-xl font-heading font-bold mb-4">Best In Lawn</h4>
+        <p class="text-gray-400 text-sm">
+          Premium lawn and cabin care. Your property, our priority.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold mb-4">Services</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="/services/lawn-care" class="hover:text-[#059669] transition">Lawn Care</a></li>
+          <li><a href="/services/cabin-care" class="hover:text-[#059669] transition">Cabin Care</a></li>
+          <li><a href="/services/commercial" class="hover:text-[#059669] transition">Commercial</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold mb-4">Service Areas</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="/areas/fargo" class="hover:text-[#059669] transition">Fargo-Moorhead</a></li>
+          <li><a href="/areas/nisswa" class="hover:text-[#059669] transition">Brainerd Lakes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-8 text-sm text-gray-400 text-center">
+      &copy; {currentYear} Best In Lawn. All rights reserved.
+    </div>
+  </div>
+</footer>
