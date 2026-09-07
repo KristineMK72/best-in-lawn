@@ -40,18 +40,28 @@ const services = [
   description="Professional lawn, cabin and property care for homes, lake properties and businesses throughout the Lakes Area."
 >
 
-  <!-- HERO -->
+  <!-- =====================================================
+       HERO
+       ===================================================== -->
+
   <section class="hero">
+
     <div class="hero-content container">
+
       <div class="hero-top">
-        <span class="eyebrow">Lawn • Cabin • Property Care</span>
+
+        <span class="eyebrow">
+          Lawn • Cabin • Property Care
+        </span>
 
         <span class="hero-location">
           Proudly serving the Lakes Area
         </span>
+
       </div>
 
       <div class="hero-title">
+
         <h1 class="display">
           BEST<br />
           <span>IN</span><br />
@@ -59,20 +69,26 @@ const services = [
         </h1>
 
         <div class="hero-side">
+
           <p>
-            Professional property care for lawns, cabins,
-            lake homes and businesses.
+            Professional property care for lawns,
+            cabins, lake homes and businesses.
           </p>
 
           <a href="#estimate" class="luxury-button">
             Get A Free Estimate
             <span class="arrow">↗</span>
           </a>
+
         </div>
+
       </div>
+
     </div>
 
+
     <div class="hero-image image-wrap">
+
       <img
         src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=2200&q=90"
         alt="Beautiful professionally maintained lawn"
@@ -82,18 +98,28 @@ const services = [
         <span>01</span>
         <span>PROPERTY CARE</span>
       </div>
+
     </div>
+
   </section>
 
 
-  <!-- STATEMENT -->
+  <!-- =====================================================
+       STATEMENT
+       ===================================================== -->
+
   <section class="statement">
+
     <div class="container statement-grid">
+
       <div>
-        <span class="section-number">01 / THE STANDARD</span>
+        <span class="section-number">
+          01 / THE STANDARD
+        </span>
       </div>
 
       <div>
+
         <h2 class="display">
           MORE<br />
           THAN<br />
@@ -101,6 +127,7 @@ const services = [
         </h2>
 
         <div class="statement-copy">
+
           <p>
             Your property is more than a yard. It is where you
             spend summer weekends, welcome friends, run your
@@ -112,17 +139,28 @@ const services = [
             property care designed to keep your place looking
             its best.
           </p>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
 
-  <!-- SERVICES -->
+  <!-- =====================================================
+       SERVICES
+       ===================================================== -->
+
   <section class="services">
+
     <div class="container services-heading">
+
       <div>
-        <span class="section-number">02 / WHAT WE DO</span>
+        <span class="section-number">
+          02 / WHAT WE DO
+        </span>
       </div>
 
       <h2 class="display">
@@ -130,82 +168,152 @@ const services = [
         EVERY<br />
         PROPERTY.
       </h2>
+
     </div>
 
+
     <div class="service-list">
+
       {services.map((service) => (
+
         <a href={service.href} class="service-item">
+
           <div class="service-image image-wrap">
-            <img src={service.image} alt={service.title} loading="lazy" />
+
+            <img
+              src={service.image}
+              alt={service.title}
+              loading="lazy"
+            />
+
           </div>
 
+
           <div class="service-info">
+
             <div class="service-meta">
               <span>{service.number}</span>
               <span>{service.label}</span>
             </div>
 
-            <h3 class="display">{service.title}</h3>
 
-            <p>{service.description}</p>
+            <h3 class="display">
+              {service.title}
+            </h3>
+
+
+            <p>
+              {service.description}
+            </p>
+
 
             <span class="service-link">
-              Explore Service <span>↗</span>
+              Explore Service
+              <span>↗</span>
             </span>
+
           </div>
+
         </a>
+
       ))}
+
     </div>
+
   </section>
 
 
-  <!-- DIFFERENCE -->
+  <!-- =====================================================
+       DIFFERENCE
+       ===================================================== -->
+
   <section class="difference">
+
     <div class="container">
+
       <div class="difference-header">
-        <span class="section-number">03 / THE DIFFERENCE</span>
+
+        <span class="section-number">
+          03 / THE DIFFERENCE
+        </span>
 
         <h2 class="display">
           WE<br />
           SHOW<br />
           <span class="serif">UP.</span>
         </h2>
+
       </div>
 
+
       <div class="difference-grid">
+
         <div class="difference-item">
-          <span class="big-number">01</span>
-          <h3>RELIABLE</h3>
+
+          <span class="big-number">
+            01
+          </span>
+
+          <h3>
+            RELIABLE
+          </h3>
+
           <p>
             Consistent service you can count on.
             Your property should never feel like an afterthought.
           </p>
+
         </div>
 
+
         <div class="difference-item">
-          <span class="big-number">02</span>
-          <h3>DETAILS MATTER</h3>
+
+          <span class="big-number">
+            02
+          </span>
+
+          <h3>
+            DETAILS MATTER
+          </h3>
+
           <p>
             Clean edges, finished spaces and attention to
             the little things that make a property stand out.
           </p>
+
         </div>
 
+
         <div class="difference-item">
-          <span class="big-number">03</span>
-          <h3>LOCAL CARE</h3>
+
+          <span class="big-number">
+            03
+          </span>
+
+          <h3>
+            LOCAL CARE
+          </h3>
+
           <p>
             We understand the properties, seasons and
             expectations of the communities we serve.
           </p>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
 
-  <!-- FULL IMAGE -->
+  <!-- =====================================================
+       FEATURE IMAGE
+       ===================================================== -->
+
   <section class="feature-image image-wrap">
+
     <img
       src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=90"
       alt="Beautiful cared-for property"
@@ -213,92 +321,170 @@ const services = [
     />
 
     <div class="feature-overlay">
-      <span class="eyebrow">The Best In Lawn Standard</span>
+
+      <span class="eyebrow">
+        The Best In Lawn Standard
+      </span>
 
       <h2 class="display">
         THIS IS<br />
         WHAT WELL-CARED-FOR<br />
         <span class="serif">LOOKS LIKE.</span>
       </h2>
+
     </div>
+
   </section>
 
 
-  <!-- HOW IT WORKS -->
+  <!-- =====================================================
+       PROCESS
+       ===================================================== -->
+
   <section class="process">
+
     <div class="container">
+
       <div class="process-heading">
-        <span class="section-number">04 / HOW IT WORKS</span>
+
+        <span class="section-number">
+          04 / HOW IT WORKS
+        </span>
 
         <h2 class="display">
           SIMPLE.<br />
           PROFESSIONAL.<br />
           <span class="serif">DONE.</span>
         </h2>
+
       </div>
 
+
       <div class="process-grid">
-        <div class="process-item">
-          <span>01</span>
-          <h3>TELL US ABOUT YOUR PROPERTY</h3>
-          <p>
-            Tell us what you need, where you're located and
-            what you want your property to look like.
-          </p>
-        </div>
 
         <div class="process-item">
+
+          <span>01</span>
+
+          <h3>
+            TELL US ABOUT YOUR PROPERTY
+          </h3>
+
+          <p>
+            Tell us what you need, where you're located
+            and what you want your property to look like.
+          </p>
+
+        </div>
+
+
+        <div class="process-item">
+
           <span>02</span>
-          <h3>GET YOUR ESTIMATE</h3>
+
+          <h3>
+            GET YOUR ESTIMATE
+          </h3>
+
           <p>
             We'll talk through the work and put together
             a straightforward estimate.
           </p>
+
         </div>
 
+
         <div class="process-item">
+
           <span>03</span>
-          <h3>ENJOY YOUR PROPERTY</h3>
+
+          <h3>
+            ENJOY YOUR PROPERTY
+          </h3>
+
           <p>
             We take care of the work so you can spend
             your time enjoying the property instead.
           </p>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
 
-  <!-- SERVICE AREAS -->
+  <!-- =====================================================
+       SERVICE AREAS
+       ===================================================== -->
+
   <section class="areas">
+
     <div class="container areas-grid">
+
       <div>
-        <span class="section-number">05 / SERVICE AREAS</span>
+
+        <span class="section-number">
+          05 / SERVICE AREAS
+        </span>
 
         <h2 class="display">
           PROUDLY<br />
           SERVING<br />
-          <span class="serif">THE LAKES AREA.</span>
+          <span class="serif">
+            THE LAKES AREA.
+          </span>
         </h2>
+
       </div>
 
+
       <div class="area-list">
-        <a href="/areas/fargo/">Fargo <span>↗</span></a>
+
+        <a href="/areas/fargo/">
+          Fargo
+          <span>↗</span>
+        </a>
+
         <span>Moorhead</span>
+
         <span>West Fargo</span>
+
         <span>Horace</span>
+
         <span>Harwood</span>
-        <a href="/areas/nisswa/">Nisswa <span>↗</span></a>
+
+        <a href="/areas/nisswa/">
+          Nisswa
+          <span>↗</span>
+        </a>
+
         <span>Lakes Area</span>
+
       </div>
+
     </div>
+
   </section>
 
 
-  <!-- CTA -->
-  <section class="final-cta" id="estimate">
+  <!-- =====================================================
+       FINAL CTA
+       ===================================================== -->
+
+  <section
+    class="final-cta"
+    id="estimate"
+  >
+
     <div class="container">
-      <span class="eyebrow">Ready when you are</span>
+
+      <span class="eyebrow">
+        Ready when you are
+      </span>
+
 
       <h2 class="display">
         MAKE YOUR<br />
@@ -306,610 +492,1009 @@ const services = [
         THE <span class="serif">BEST.</span>
       </h2>
 
+
       <p>
         Tell us a little about your property and what you need.
         We'll take it from there.
       </p>
 
+
       <div class="cta-actions">
-        <a href="tel:+17012386904" class="luxury-button light">
+
+        <a
+          href="tel:+17012386904"
+          class="luxury-button light"
+        >
           Call (701) 238-6904
           <span class="arrow">↗</span>
         </a>
 
-        <a href="mailto:bestinlawn@gmail.com" class="text-link">
+
+        <a
+          href="mailto:bestinlawn@gmail.com"
+          class="text-link"
+        >
           Email Best In Lawn →
         </a>
+
       </div>
+
     </div>
+
   </section>
 
 </BaseLayout>
 
 
 <style>
-  /* HERO */
 
-  .hero {
-    background: var(--cream);
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+  background: var(--cream);
+}
+
+.hero-content {
+  padding-top: 50px;
+  padding-bottom: 42px;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-location {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--muted);
+}
+
+.hero-title {
+  display: grid;
+
+  grid-template-columns: 1fr 260px;
+
+  gap: 50px;
+
+  align-items: end;
+
+  padding-top: 42px;
+  padding-bottom: 48px;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: clamp(
+    4.8rem,
+    11vw,
+    11rem
+  );
+
+  line-height: 0.82;
+
+  letter-spacing: -0.065em;
+}
+
+.hero h1 span:not(.period) {
+  color: var(--green);
+}
+
+.hero .period {
+  color: var(--gold);
+}
+
+.hero-side {
+  padding-bottom: 12px;
+}
+
+.hero-side p {
+  margin: 0 0 24px;
+
+  color: var(--muted);
+
+  font-size: 0.9rem;
+
+  line-height: 1.7;
+}
+
+.hero-image {
+  height: min(68vh, 760px);
+
+  position: relative;
+}
+
+.hero-image::after {
+  content: '';
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(7, 28, 18, 0.42),
+      transparent 42%
+    );
+
+  pointer-events: none;
+}
+
+.hero-image-label {
+  position: absolute;
+
+  z-index: 2;
+
+  bottom: 25px;
+
+  left: 30px;
+  right: 30px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  color: white;
+
+  font-size: 0.65rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.15em;
+}
+
+
+/* =========================================================
+   STATEMENT
+   ========================================================= */
+
+.statement {
+  padding: 135px 0;
+
+  background: white;
+}
+
+.statement-grid {
+  display: grid;
+
+  grid-template-columns: 25% 1fr;
+
+  gap: 30px;
+}
+
+.statement h2 {
+  margin: 0;
+
+  font-size: clamp(
+    4rem,
+    8vw,
+    8.5rem
+  );
+
+  line-height: 0.86;
+
+  letter-spacing: -0.055em;
+}
+
+.statement-copy {
+  max-width: 600px;
+
+  margin-top: 50px;
+
+  margin-left: 28%;
+}
+
+.statement-copy p {
+  margin: 0 0 18px;
+
+  color: var(--muted);
+
+  font-size: 1rem;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.services {
+  padding: 130px 0;
+
+  background: var(--cream);
+}
+
+.services-heading {
+  display: grid;
+
+  grid-template-columns: 25% 1fr;
+
+  gap: 30px;
+
+  margin-bottom: 80px;
+}
+
+.services-heading h2 {
+  margin: 0;
+
+  font-size: clamp(
+    3.8rem,
+    7.5vw,
+    8rem
+  );
+
+  line-height: 0.88;
+
+  letter-spacing: -0.055em;
+}
+
+.service-list {
+  width: min(
+    1250px,
+    calc(100% - 40px)
+  );
+
+  margin: auto;
+}
+
+.service-item {
+  display: grid;
+
+  grid-template-columns:
+    1.2fr
+    0.8fr;
+
+  min-height: 560px;
+
+  margin-bottom: 28px;
+
+  background: white;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 20px 50px rgba(7, 28, 18, 0.08);
+}
+
+.service-item:nth-child(even) {
+  grid-template-columns:
+    0.8fr
+    1.2fr;
+}
+
+.service-item:nth-child(even)
+.service-image {
+  order: 2;
+}
+
+.service-image {
+  min-height: 500px;
+}
+
+.service-info {
+  padding: 52px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.service-meta {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 48px;
+
+  color: var(--muted);
+
+  font-size: 0.62rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+.service-info h3 {
+  margin: 0 0 22px;
+
+  color: var(--green);
+
+  font-size: clamp(
+    3rem,
+    5vw,
+    5.8rem
+  );
+
+  line-height: 0.88;
+
+  letter-spacing: -0.055em;
+}
+
+.service-info p {
+  max-width: 420px;
+
+  margin: 0 0 32px;
+
+  color: var(--muted);
+
+  line-height: 1.75;
+}
+
+.service-link {
+  font-size: 0.7rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  color: var(--text);
+}
+
+.service-link span {
+  margin-left: 8px;
+
+  font-size: 1rem;
+}
+
+
+/* =========================================================
+   DIFFERENCE
+   ========================================================= */
+
+.difference {
+  padding: 135px 0;
+
+  background: var(--green);
+
+  color: white;
+}
+
+.difference-header {
+  display: grid;
+
+  grid-template-columns: 25% 1fr;
+
+  gap: 30px;
+}
+
+.difference-header h2 {
+  margin: 0;
+
+  font-size: clamp(
+    4.2rem,
+    9vw,
+    10rem
+  );
+
+  line-height: 0.84;
+
+  letter-spacing: -0.06em;
+}
+
+.difference-header .serif {
+  color: var(--sage);
+}
+
+.difference-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  margin-top: 90px;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,0.25);
+}
+
+.difference-item {
+  padding: 42px 35px 0 0;
+
+  border-right:
+    1px solid
+    rgba(255,255,255,0.25);
+}
+
+.difference-item:not(:first-child) {
+  padding-left: 35px;
+}
+
+.difference-item:last-child {
+  border-right: 0;
+}
+
+.big-number {
+  display: block;
+
+  margin-bottom: 42px;
+
+  color: var(--sage);
+
+  font-size: 2.7rem;
+
+  font-weight: 900;
+
+  letter-spacing: -0.08em;
+}
+
+.difference-item h3 {
+  margin: 0 0 15px;
+
+  font-size: 1rem;
+
+  letter-spacing: 0.08em;
+}
+
+.difference-item p {
+  max-width: 330px;
+
+  color: #b9c8bd;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   FEATURE IMAGE
+   ========================================================= */
+
+.feature-image {
+  height: 75vh;
+
+  min-height: 580px;
+
+  position: relative;
+}
+
+.feature-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 2;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 7%;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7,28,18,0.68),
+      rgba(7,28,18,0.04)
+    );
+
+  color: white;
+}
+
+.feature-overlay h2 {
+  margin: 25px 0 0;
+
+  font-size: clamp(
+    3.5rem,
+    7vw,
+    8rem
+  );
+
+  line-height: 0.88;
+
+  letter-spacing: -0.055em;
+}
+
+.feature-overlay .serif {
+  color: var(--sage);
+}
+
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+
+.process {
+  padding: 135px 0;
+
+  background: white;
+}
+
+.process-heading {
+  display: grid;
+
+  grid-template-columns: 25% 1fr;
+
+  gap: 30px;
+}
+
+.process-heading h2 {
+  margin: 0;
+
+  font-size: clamp(
+    3.8rem,
+    7.5vw,
+    8rem
+  );
+
+  line-height: 0.87;
+
+  letter-spacing: -0.055em;
+}
+
+.process-heading .serif {
+  color: var(--green);
+}
+
+.process-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  margin-top: 100px;
+
+  border-top:
+    1px solid var(--line);
+}
+
+.process-item {
+  padding: 40px 40px 0 0;
+
+  border-right:
+    1px solid var(--line);
+}
+
+.process-item:not(:first-child) {
+  padding-left: 40px;
+}
+
+.process-item:last-child {
+  border-right: 0;
+}
+
+.process-item > span {
+  color: var(--green);
+
+  font-size: 2.7rem;
+
+  font-weight: 900;
+
+  letter-spacing: -0.08em;
+}
+
+.process-item h3 {
+  margin: 38px 0 15px;
+
+  font-size: 0.95rem;
+
+  letter-spacing: 0.04em;
+}
+
+.process-item p {
+  max-width: 330px;
+
+  color: var(--muted);
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   AREAS
+   ========================================================= */
+
+.areas {
+  padding: 135px 0;
+
+  background: var(--sage);
+}
+
+.areas-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 90px;
+}
+
+.areas h2 {
+  margin: 30px 0 0;
+
+  font-size: clamp(
+    3.5rem,
+    6.5vw,
+    7rem
+  );
+
+  line-height: 0.88;
+
+  letter-spacing: -0.055em;
+}
+
+.areas h2 .serif {
+  color: var(--green);
+}
+
+.area-list {
+  display: flex;
+
+  flex-direction: column;
+
+  align-self: end;
+}
+
+.area-list > * {
+  padding: 17px 0;
+
+  border-bottom:
+    1px solid
+    rgba(18,59,40,0.2);
+
+  font-size: 1.05rem;
+
+  font-weight: 800;
+}
+
+.area-list a {
+  display: flex;
+
+  justify-content: space-between;
+
+  text-decoration: none;
+
+  color: inherit;
+}
+
+.area-list a:hover {
+  color: var(--green-mid);
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.final-cta {
+  padding: 150px 0;
+
+  background: var(--green-dark);
+
+  color: white;
+}
+
+.final-cta h2 {
+  margin: 32px 0;
+
+  font-size: clamp(
+    4.2rem,
+    9vw,
+    10rem
+  );
+
+  line-height: 0.84;
+
+  letter-spacing: -0.06em;
+}
+
+.final-cta h2 .serif {
+  color: var(--sage);
+}
+
+.final-cta p {
+  max-width: 480px;
+
+  margin-bottom: 32px;
+
+  color: #aebdb3;
+
+  line-height: 1.8;
+}
+
+.cta-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 28px;
+}
+
+.text-link {
+  color: white;
+
+  font-size: 0.7rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   IMAGE SYSTEM
+   ========================================================= */
+
+.image-wrap {
+  overflow: hidden;
+}
+
+.image-wrap img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.8s
+    cubic-bezier(0.2,0.7,0.2,1);
+}
+
+.service-item:hover
+.service-image img {
+  transform: scale(1.035);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .hero-title,
+  .statement-grid,
+  .services-heading,
+  .difference-header,
+  .process-heading {
+    grid-template-columns: 1fr;
   }
 
-  .hero-content {
-    padding-top: 50px;
-    padding-bottom: 45px;
-  }
-
-  .hero-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 28px;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .hero-location {
-    font-size: 0.65rem;
-    font-weight: 800;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--muted);
-  }
-
-  .hero-title {
-    display: grid;
-    grid-template-columns: 1fr 260px;
-    gap: 40px;
-    align-items: end;
-    padding-top: 45px;
-    padding-bottom: 55px;
-  }
 
   .hero h1 {
-    margin: 0;
-    font-size: clamp(6rem, 15vw, 15rem);
-  }
-
-  .hero h1 span:not(.period) {
-    color: var(--green);
-  }
-
-  .hero .period {
-    color: var(--gold);
-  }
-
-  .hero-side {
-    padding-bottom: 15px;
-  }
-
-  .hero-side p {
-    margin: 0 0 25px;
-    color: var(--muted);
-    font-size: 0.9rem;
-    line-height: 1.7;
-  }
-
-  .hero-image {
-    height: min(68vh, 800px);
-    position: relative;
-  }
-
-  .hero-image::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to top,
-      rgba(7, 28, 18, 0.4),
-      transparent 40%
-    );
-    pointer-events: none;
-  }
-
-  .hero-image-label {
-    position: absolute;
-    z-index: 2;
-    bottom: 25px;
-    left: 30px;
-    right: 30px;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    font-size: 0.65rem;
-    font-weight: 900;
-    letter-spacing: 0.15em;
+    font-size:
+      clamp(
+        4.5rem,
+        17vw,
+        8rem
+      );
   }
 
 
-  /* STATEMENT */
-
-  .statement {
-    padding: 150px 0;
-    background: white;
+  .statement,
+  .services,
+  .difference,
+  .process,
+  .areas,
+  .final-cta {
+    padding: 90px 0;
   }
 
-  .statement-grid {
-    display: grid;
-    grid-template-columns: 25% 1fr;
-    gap: 30px;
-  }
-
-  .statement h2 {
-    margin: 0;
-    font-size: clamp(5rem, 11vw, 12rem);
-  }
 
   .statement-copy {
-    max-width: 600px;
-    margin-top: 55px;
-    margin-left: 28%;
-  }
+    margin-left: 0;
 
-  .statement-copy p {
-    margin: 0 0 18px;
-    color: var(--muted);
-    font-size: 1rem;
-    line-height: 1.8;
+    margin-top: 35px;
   }
 
 
-  /* SERVICES */
-
-  .services {
-    padding: 140px 0;
-    background: var(--cream);
-  }
-
-  .services-heading {
-    display: grid;
-    grid-template-columns: 25% 1fr;
-    gap: 30px;
-    margin-bottom: 90px;
-  }
-
-  .services-heading h2 {
-    margin: 0;
-    font-size: clamp(4.5rem, 10vw, 10rem);
-  }
-
-  .service-list {
-    width: min(1250px, calc(100% - 40px));
-    margin: auto;
-  }
-
-  .service-item {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    min-height: 600px;
-    margin-bottom: 30px;
-    background: white;
-  }
-
+  .service-item,
   .service-item:nth-child(even) {
-    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-columns: 1fr;
   }
 
-  .service-item:nth-child(even) .service-image {
-    order: 2;
+
+  .service-item:nth-child(even)
+  .service-image {
+    order: 0;
   }
+
 
   .service-image {
+    min-height: 350px;
+  }
+
+
+  .difference-grid,
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .difference-item,
+  .difference-item:not(:first-child),
+  .process-item,
+  .process-item:not(:first-child) {
+
+    padding:
+      35px 0;
+
+    border-right: 0;
+
+    border-bottom:
+      1px solid
+      rgba(255,255,255,0.25);
+  }
+
+
+  .process-item,
+  .process-item:not(:first-child) {
+
+    border-color:
+      var(--line);
+  }
+
+
+  .areas-grid {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .hero-content {
+    padding-top: 30px;
+
+    padding-bottom: 30px;
+  }
+
+
+  .hero-top {
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+
+  .hero-location {
+    text-align: right;
+
+    max-width: 120px;
+  }
+
+
+  .hero-title {
+    padding-top: 32px;
+
+    padding-bottom: 34px;
+  }
+
+
+  .hero h1 {
+    font-size:
+      clamp(
+        4rem,
+        20vw,
+        7rem
+      );
+
+    letter-spacing: -0.07em;
+  }
+
+
+  .hero-image {
+    height: 55vh;
+
+    min-height: 400px;
+  }
+
+
+  .service-list {
+    width:
+      calc(100% - 28px);
+  }
+
+
+  .service-info {
+    padding:
+      35px 25px 45px;
+  }
+
+
+  .service-meta {
+    margin-bottom: 32px;
+  }
+
+
+  .service-info h3 {
+    font-size:
+      clamp(
+        2.8rem,
+        13vw,
+        5rem
+      );
+  }
+
+
+  .feature-image {
+    height: 70vh;
+
     min-height: 500px;
   }
 
-  .service-info {
-    padding: 55px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .service-meta {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 55px;
-    color: var(--muted);
-    font-size: 0.62rem;
-    font-weight: 900;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-  }
-
-  .service-info h3 {
-    margin: 0 0 25px;
-    color: var(--green);
-    font-size: clamp(3.5rem, 6vw, 7rem);
-  }
-
-  .service-info p {
-    max-width: 420px;
-    margin: 0 0 35px;
-    color: var(--muted);
-    line-height: 1.75;
-  }
-
-  .service-link {
-    font-size: 0.7rem;
-    font-weight: 900;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-  }
-
-  .service-link span {
-    margin-left: 8px;
-    font-size: 1rem;
-  }
-
-
-  /* DIFFERENCE */
-
-  .difference {
-    padding: 150px 0;
-    background: var(--green);
-    color: white;
-  }
-
-  .difference-header {
-    display: grid;
-    grid-template-columns: 25% 1fr;
-    gap: 30px;
-  }
-
-  .difference-header h2 {
-    margin: 0;
-    font-size: clamp(5rem, 12vw, 13rem);
-  }
-
-  .difference-header .serif {
-    color: var(--sage);
-  }
-
-  .difference-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0;
-    margin-top: 100px;
-    border-top: 1px solid rgba(255,255,255,0.25);
-  }
-
-  .difference-item {
-    padding: 45px 35px 0 0;
-    border-right: 1px solid rgba(255,255,255,0.25);
-  }
-
-  .difference-item:not(:first-child) {
-    padding-left: 35px;
-  }
-
-  .difference-item:last-child {
-    border-right: 0;
-  }
-
-  .big-number {
-    display: block;
-    margin-bottom: 45px;
-    color: var(--sage);
-    font-size: 3rem;
-    font-weight: 900;
-    letter-spacing: -0.08em;
-  }
-
-  .difference-item h3 {
-    margin: 0 0 15px;
-    font-size: 1rem;
-    letter-spacing: 0.08em;
-  }
-
-  .difference-item p {
-    max-width: 330px;
-    color: #b9c8bd;
-    line-height: 1.7;
-  }
-
-
-  /* FEATURE IMAGE */
-
-  .feature-image {
-    height: 80vh;
-    min-height: 600px;
-    position: relative;
-  }
 
   .feature-overlay {
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 7%;
-    background: linear-gradient(
-      90deg,
-      rgba(7,28,18,0.7),
-      rgba(7,28,18,0.05)
-    );
-    color: white;
+    padding: 28px;
   }
+
 
   .feature-overlay h2 {
-    margin: 25px 0 0;
-    font-size: clamp(4rem, 9vw, 10rem);
+    font-size:
+      clamp(
+        3.2rem,
+        13vw,
+        5.5rem
+      );
   }
 
-  .feature-overlay .serif {
-    color: var(--sage);
-  }
-
-
-  /* PROCESS */
-
-  .process {
-    padding: 150px 0;
-    background: white;
-  }
-
-  .process-heading {
-    display: grid;
-    grid-template-columns: 25% 1fr;
-    gap: 30px;
-  }
-
-  .process-heading h2 {
-    margin: 0;
-    font-size: clamp(4.5rem, 10vw, 10rem);
-  }
-
-  .process-heading .serif {
-    color: var(--green);
-  }
-
-  .process-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 110px;
-    border-top: 1px solid var(--line);
-  }
-
-  .process-item {
-    padding: 40px 40px 0 0;
-    border-right: 1px solid var(--line);
-  }
-
-  .process-item:not(:first-child) {
-    padding-left: 40px;
-  }
-
-  .process-item:last-child {
-    border-right: 0;
-  }
-
-  .process-item > span {
-    color: var(--green);
-    font-size: 3rem;
-    font-weight: 900;
-    letter-spacing: -0.08em;
-  }
-
-  .process-item h3 {
-    margin: 40px 0 15px;
-    font-size: 0.95rem;
-    letter-spacing: 0.04em;
-  }
-
-  .process-item p {
-    max-width: 330px;
-    color: var(--muted);
-    line-height: 1.7;
-  }
-
-
-  /* AREAS */
-
-  .areas {
-    padding: 150px 0;
-    background: var(--sage);
-  }
-
-  .areas-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
-  }
 
   .areas h2 {
-    margin: 30px 0 0;
-    font-size: clamp(4rem, 8vw, 8rem);
+    font-size:
+      clamp(
+        3.2rem,
+        13vw,
+        6rem
+      );
   }
 
-  .areas h2 .serif {
-    color: var(--green);
-  }
-
-  .area-list {
-    display: flex;
-    flex-direction: column;
-    align-self: end;
-  }
-
-  .area-list > * {
-    padding: 18px 0;
-    border-bottom: 1px solid rgba(18,59,40,0.2);
-    font-size: 1.1rem;
-    font-weight: 800;
-  }
-
-  .area-list a {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .area-list a:hover {
-    color: var(--green-mid);
-  }
-
-
-  /* CTA */
-
-  .final-cta {
-    padding: 170px 0;
-    background: var(--green-dark);
-    color: white;
-  }
 
   .final-cta h2 {
-    margin: 35px 0;
-    font-size: clamp(5rem, 12vw, 13rem);
+    font-size:
+      clamp(
+        3.7rem,
+        15vw,
+        7rem
+      );
   }
 
-  .final-cta h2 .serif {
-    color: var(--sage);
-  }
-
-  .final-cta p {
-    max-width: 480px;
-    margin-bottom: 35px;
-    color: #aebdb3;
-    line-height: 1.8;
-  }
 
   .cta-actions {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+    align-items: flex-start;
+
+    flex-direction: column;
   }
 
-  .text-link {
-    color: white;
-    font-size: 0.7rem;
-    font-weight: 900;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-  }
+}
 
-
-  /* RESPONSIVE */
-
-  @media (max-width: 900px) {
-    .hero-title,
-    .statement-grid,
-    .services-heading,
-    .difference-header,
-    .process-heading {
-      grid-template-columns: 1fr;
-    }
-
-    .hero h1 {
-      font-size: clamp(5.5rem, 19vw, 10rem);
-    }
-
-    .statement,
-    .services,
-    .difference,
-    .process,
-    .areas,
-    .final-cta {
-      padding: 90px 0;
-    }
-
-    .statement-copy {
-      margin-left: 0;
-      margin-top: 35px;
-    }
-
-    .service-item,
-    .service-item:nth-child(even) {
-      grid-template-columns: 1fr;
-    }
-
-    .service-item:nth-child(even) .service-image {
-      order: 0;
-    }
-
-    .service-image {
-      min-height: 350px;
-    }
-
-    .difference-grid,
-    .process-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .difference-item,
-    .difference-item:not(:first-child),
-    .process-item,
-    .process-item:not(:first-child) {
-      padding: 35px 0;
-      border-right: 0;
-      border-bottom: 1px solid rgba(255,255,255,0.25);
-    }
-
-    .process-item,
-    .process-item:not(:first-child) {
-      border-color: var(--line);
-    }
-
-    .areas-grid {
-      grid-template-columns: 1fr;
-      gap: 60px;
-    }
-  }
-
-  @media (max-width: 600px) {
-    .hero-content {
-      padding-top: 30px;
-    }
-
-    .hero-top {
-      align-items: flex-start;
-      gap: 20px;
-    }
-
-    .hero-location {
-      text-align: right;
-      max-width: 120px;
-    }
-
-    .hero-title {
-      padding-top: 35px;
-      padding-bottom: 35px;
-    }
-
-    .hero h1 {
-      font-size: clamp(4.7rem, 22vw, 8rem);
-    }
-
-    .hero-image {
-      height: 55vh;
-      min-height: 400px;
-    }
-
-    .service-list {
-      width: calc(100% - 28px);
-    }
-
-    .service-info {
-      padding: 35px 25px 45px;
-    }
-
-    .service-meta {
-      margin-bottom: 35px;
-    }
-
-    .feature-image {
-      height: 70vh;
-      min-height: 500px;
-    }
-
-    .feature-overlay {
-      padding: 28px;
-    }
-
-    .feature-overlay h2 {
-      font-size: clamp(3.5rem, 14vw, 6rem);
-    }
-
-    .cta-actions {
-      align-items: flex-start;
-      flex-direction: column;
-    }
-  }
 </style>
