@@ -1,4 +1,3 @@
-
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const title = "Professional Lawn & Cabin Care in the Brainerd Lakes Area";
