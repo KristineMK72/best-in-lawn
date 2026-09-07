@@ -1,0 +1,25 @@
+---
+---
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-20 items-center">
+      <a href="/" class="text-2xl font-heading font-bold text-brand-forest">
+        Best In Lawn
+      </a>
+
+      <nav class="hidden md:flex space-x-8">
+        <a href="/" class="text-brand-dark hover:text-brand-leaf font-medium transition">Home</a>
+        <a href="/services" class="text-brand-dark hover:text-brand-leaf font-medium transition">Services</a>
+        <a href="/areas" class="text-brand-dark hover:text-brand-leaf font-medium transition">Service Areas</a>
+        <a href="/about" class="text-brand-dark hover:text-brand-leaf font-medium transition">About</a>
+        <a href="/contact" class="text-brand-dark hover:text-brand-leaf font-medium transition">Contact</a>
+      </nav>
+
+      <div class="hidden md:block">
+        <a href="/contact" class="bg-brand-forest text-white px-6 py-2.5 rounded-md font-medium hover:bg-opacity-90 transition shadow-sm">
+          Request a Quote
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
