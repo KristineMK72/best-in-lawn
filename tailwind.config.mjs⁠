@@ -2,21 +2,7 @@
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
-    extend: {
-      colors: {
-        brand: {
-          dark: '#0f172a',
-          forest: '#115e59',
-          leaf: '#059669',
-          earth: '#78716c',
-          light: '#f8fafc',
-        }
-      },
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        heading: ['Playfair Display', 'serif'],
-      }
-    },
+    extend: {},
   },
   plugins: [],
 }
