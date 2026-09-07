@@ -1,9 +1,8 @@
----
+
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const title = "Professional Lawn & Cabin Care in the Brainerd Lakes Area";
 const description = "Best In Lawn provides premium lawn care, commercial property maintenance, and specialized cabin care across Brainerd, Baxter, Nisswa, and beyond.";
----
 
 <BaseLayout title={title} description={description}>
   <section class="relative bg-brand-dark h-[80vh] min-h-[600px] flex items-center">
