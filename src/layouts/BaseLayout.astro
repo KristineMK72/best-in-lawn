@@ -15,19 +15,128 @@ const { title, description } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta name="description" content={description} />
+    <meta name="theme-color" content="#173b2a" />
+
     <title>{title}</title>
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style is:global>
+      :root {
+        --forest: #173b2a;
+        --forest-dark: #0e291d;
+        --green: #477b50;
+        --sage: #e8efe6;
+        --cream: #f7f4ec;
+        --gold: #c7a45b;
+        --ink: #1d2922;
+        --muted: #657168;
+        --line: #dfe6dd;
+      }
+
+      html {
+        background: var(--cream);
+      }
+
+      body {
+        margin: 0;
+        background: var(--cream);
+        color: var(--ink);
+        font-family: 'DM Sans', sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: 'Playfair Display', serif;
+      }
+
+      ::selection {
+        background: var(--gold);
+        color: var(--forest-dark);
+      }
+
+      .eyebrow {
+        color: var(--green);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      .section-wrap {
+        width: min(1120px, calc(100% - 2rem));
+        margin-inline: auto;
+      }
+
+      .button-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.55rem;
+        border-radius: 999px;
+        background: var(--forest);
+        color: white;
+        padding: 0.9rem 1.4rem;
+        font-weight: 700;
+        box-shadow: 0 10px 24px rgba(23, 59, 42, 0.16);
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .button-primary:hover {
+        background: var(--forest-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 14px 28px rgba(23, 59, 42, 0.2);
+      }
+
+      .button-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(23, 59, 42, 0.22);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.75);
+        color: var(--forest);
+        padding: 0.9rem 1.4rem;
+        font-weight: 700;
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease;
+      }
+
+      .button-secondary:hover {
+        background: white;
+        transform: translateY(-2px);
+      }
+
+      .card-shadow {
+        box-shadow: 0 18px 50px rgba(23, 59, 42, 0.08);
+      }
+    </style>
   </head>
-  <body class="bg-[#f8fafc] text-[#0f172a] antialiased flex flex-col min-h-screen">
+
+  <body class="flex min-h-screen flex-col">
     <Navbar />
+
     <main class="flex-grow">
       <slot />
     </main>
+
     <Footer />
   </body>
 </html>
