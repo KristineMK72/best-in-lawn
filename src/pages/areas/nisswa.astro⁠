@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = "Cabin Care & Lawn Maintenance in Nisswa, MN | Best In Lawn";
+const description = "Premium exterior cabin care, property management, and lawn maintenance for homes and lake properties in Nisswa and the Brainerd Lakes Area.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="bg-brand-light py-16 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-heading font-bold text-brand-dark mb-4">Cabin & Property Care in Nisswa, MN</h1>
+      <p class="text-lg text-brand-earth max-w-3xl">
+        Serving the heart of the Brainerd Lakes Area. Whether you need reliable lawn care for your primary residence or dedicated year-round property management for your Gull Lake cabin, we ensure your property stays pristine.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-2xl font-bold text-brand-dark mb-4">Nisswa Services</h2>
+          <ul class="space-y-3 mb-6">
+            <li><a href="/services/cabin-care" class="text-brand-forest font-medium hover:underline">Absentee Owner Cabin Care</a></li>
+            <li><a href="/services/cabin-care" class="text-brand-forest font-medium hover:underline">Pre-Arrival Property Prep</a></li>
+            <li><a href="/services/lawn-care" class="text-brand-forest font-medium hover:underline">Weekly Lawn Maintenance</a></li>
+            <li><a href="/services/lawn-care" class="text-brand-forest font-medium hover:underline">Seasonal Brush Clearing & Cleanups</a></li>
+          </ul>
+          <a href="/contact" class="inline-block bg-brand-leaf text-white px-6 py-2 rounded shadow hover:bg-emerald-700 transition">Request a Property Evaluation</a>
+        </div>
+        
+        <div class="rounded-lg overflow-hidden h-64 shadow-md">
+          <img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?q=80&w=800&auto=format&fit=crop" alt="Nisswa area cabin" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
