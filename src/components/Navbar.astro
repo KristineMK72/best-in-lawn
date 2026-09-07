@@ -1,167 +1,238 @@
----
----
+<header class="site-header">
+  <div class="nav-shell">
+    <a href="/" class="brand" aria-label="Best In Lawn home">
+      <span class="brand-mark">B</span>
 
-<header class="sticky top-0 z-50 border-b border-[#dfe6dd] bg-[#f7f4ec]/95 backdrop-blur-md">
-  <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
-
-    <!-- Brand -->
-    <a href="/" class="group flex items-center gap-3">
-      <div class="flex h-11 w-11 items-center justify-center rounded-full bg-[#173b2a] text-white shadow-sm">
-        <span class="font-serif text-xl">B</span>
-      </div>
-
-      <div class="leading-none">
-        <div class="font-serif text-xl font-bold text-[#173b2a]">
-          Best In Lawn
-        </div>
-
-        <div class="mt-1 text-[9px] font-bold uppercase tracking-[0.2em] text-[#657168]">
-          Lawn • Cabin • Commercial
-        </div>
-      </div>
+      <span class="brand-copy">
+        <strong>BEST IN LAWN</strong>
+        <small>LAWN • CABIN • PROPERTY CARE</small>
+      </span>
     </a>
 
-    <!-- Desktop Navigation -->
-    <nav class="hidden items-center gap-8 lg:flex">
-      <a
-        href="/"
-        class="text-sm font-semibold text-[#1d2922] transition hover:text-[#477b50]"
-      >
-        Home
-      </a>
-
-      <a
-        href="/services/lawn-care"
-        class="text-sm font-semibold text-[#1d2922] transition hover:text-[#477b50]"
-      >
-        Lawn Care
-      </a>
-
-      <a
-        href="/services/cabin-care"
-        class="text-sm font-semibold text-[#1d2922] transition hover:text-[#477b50]"
-      >
-        Cabin Care
-      </a>
-
-      <a
-        href="/services/commercial"
-        class="text-sm font-semibold text-[#1d2922] transition hover:text-[#477b50]"
-      >
-        Commercial
-      </a>
-
-      <a
-        href="/areas/fargo"
-        class="text-sm font-semibold text-[#1d2922] transition hover:text-[#477b50]"
-      >
-        Service Areas
-      </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="/services/lawn-care/">Lawn Care</a>
+      <a href="/services/cabin-care/">Cabin Care</a>
+      <a href="/services/commercial/">Commercial</a>
+      <a href="/areas/nisswa/">Service Areas</a>
     </nav>
 
-    <!-- Desktop CTA -->
-    <a
-      href="/contact"
-      class="hidden rounded-full bg-[#173b2a] px-5 py-3 text-sm font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#0e291d] hover:shadow-lg md:inline-flex"
-    >
-      Get a Free Estimate
+    <a href="#estimate" class="nav-cta">
+      Get An Estimate
+      <span>↗</span>
     </a>
 
-    <!-- Mobile Button -->
     <button
+      class="menu-button"
       id="menu-button"
-      type="button"
-      aria-label="Open navigation menu"
+      aria-label="Open menu"
       aria-expanded="false"
-      class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#dfe6dd] bg-white text-[#173b2a] lg:hidden"
+      aria-controls="mobile-menu"
     >
-      <svg
-        id="menu-icon"
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-5 w-5"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        stroke-width="2"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-
-      <svg
-        id="close-icon"
-        xmlns="http://www.w3.org/2000/svg"
-        class="hidden h-5 w-5"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        stroke-width="2"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-      </svg>
+      <span></span>
+      <span></span>
     </button>
   </div>
 
-  <!-- Mobile Navigation -->
-  <div id="mobile-menu" class="hidden border-t border-[#dfe6dd] bg-[#f7f4ec] lg:hidden">
-    <nav class="mx-auto flex max-w-7xl flex-col px-5 py-5">
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/services/lawn-care/">Lawn Care</a>
+    <a href="/services/cabin-care/">Cabin Care</a>
+    <a href="/services/commercial/">Commercial</a>
+    <a href="/areas/nisswa/">Service Areas</a>
 
-      <a
-        href="/"
-        class="border-b border-[#dfe6dd] py-4 text-base font-semibold text-[#173b2a]"
-      >
-        Home
-      </a>
-
-      <a
-        href="/services/lawn-care"
-        class="border-b border-[#dfe6dd] py-4 text-base font-semibold text-[#173b2a]"
-      >
-        Lawn Care
-      </a>
-
-      <a
-        href="/services/cabin-care"
-        class="border-b border-[#dfe6dd] py-4 text-base font-semibold text-[#173b2a]"
-      >
-        Cabin Care
-      </a>
-
-      <a
-        href="/services/commercial"
-        class="border-b border-[#dfe6dd] py-4 text-base font-semibold text-[#173b2a]"
-      >
-        Commercial
-      </a>
-
-      <a
-        href="/areas/fargo"
-        class="border-b border-[#dfe6dd] py-4 text-base font-semibold text-[#173b2a]"
-      >
-        Service Areas
-      </a>
-
-      <a
-        href="/contact"
-        class="mt-5 inline-flex justify-center rounded-full bg-[#173b2a] px-5 py-3.5 font-bold text-white"
-      >
-        Get a Free Estimate
-      </a>
-    </nav>
+    <a href="#estimate" class="mobile-estimate">
+      Get An Estimate <span>↗</span>
+    </a>
   </div>
 </header>
 
 <script>
   const button = document.getElementById('menu-button');
   const menu = document.getElementById('mobile-menu');
-  const menuIcon = document.getElementById('menu-icon');
-  const closeIcon = document.getElementById('close-icon');
 
   button?.addEventListener('click', () => {
-    const isOpen = button.getAttribute('aria-expanded') === 'true';
+    const open = button.getAttribute('aria-expanded') === 'true';
 
-    button.setAttribute('aria-expanded', String(!isOpen));
-    menu?.classList.toggle('hidden', isOpen);
-    menuIcon?.classList.toggle('hidden', !isOpen);
-    closeIcon?.classList.toggle('hidden', isOpen);
+    button.setAttribute('aria-expanded', String(!open));
+    menu?.classList.toggle('open', !open);
+  });
+
+  menu?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      button?.setAttribute('aria-expanded', 'false');
+      menu?.classList.remove('open');
+    });
   });
 </script>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(245, 245, 239, 0.94);
+    border-bottom: 1px solid rgba(18, 59, 40, 0.12);
+    backdrop-filter: blur(16px);
+  }
+
+  .nav-shell {
+    width: min(1400px, calc(100% - 40px));
+    min-height: 82px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .brand-mark {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    background: var(--green);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+
+  .brand-copy {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+
+  .brand-copy strong {
+    font-size: 0.9rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+  }
+
+  .brand-copy small {
+    margin-top: 5px;
+    color: var(--muted);
+    font-size: 0.48rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+  }
+
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: auto;
+  }
+
+  .desktop-nav a {
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 150ms ease;
+  }
+
+  .desktop-nav a:hover {
+    color: var(--green-mid);
+  }
+
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 17px;
+    background: var(--green);
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .nav-cta span {
+    font-size: 1rem;
+  }
+
+  .menu-button {
+    display: none;
+    width: 45px;
+    height: 45px;
+    border: 0;
+    background: var(--green);
+    cursor: pointer;
+  }
+
+  .menu-button span {
+    width: 19px;
+    height: 2px;
+    display: block;
+    margin: 5px auto;
+    background: white;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  @media (max-width: 1050px) {
+    .desktop-nav,
+    .nav-cta {
+      display: none;
+    }
+
+    .menu-button {
+      display: block;
+    }
+
+    .mobile-menu {
+      padding: 8px 20px 24px;
+      background: var(--cream);
+    }
+
+    .mobile-menu.open {
+      display: grid;
+    }
+
+    .mobile-menu > a {
+      padding: 17px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.8rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .mobile-estimate {
+      margin-top: 14px;
+      padding: 18px !important;
+      border: 0 !important;
+      background: var(--green);
+      color: white;
+    }
+
+    .mobile-estimate span {
+      margin-left: auto;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .nav-shell {
+      width: calc(100% - 28px);
+      min-height: 72px;
+    }
+
+    .brand-copy small {
+      display: none;
+    }
+
+    .brand-copy strong {
+      font-size: 0.78rem;
+    }
+  }
+</style>
