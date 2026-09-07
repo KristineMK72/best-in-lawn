@@ -1,9 +1,7 @@
----
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const title = "Cabin Care & Lawn Maintenance in Nisswa, MN | Best In Lawn";
 const description = "Premium exterior cabin care, property management, and lawn maintenance for homes and lake properties in Nisswa and the Brainerd Lakes Area.";
----
 
 <BaseLayout title={title} description={description}>
   <section class="bg-brand-light py-16 border-b border-gray-200">
