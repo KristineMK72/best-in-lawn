@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = "Expert Lawn Care & Maintenance | Best In Lawn";
+const description = "Professional lawn mowing, trimming, weed control, and fertilization services. Customized care by local experts. Get a free estimate today.";
+---
+
+<BaseLayout title={title} description={description}>
+  <!-- Hero Section -->
+  <section class="bg-brand-forest py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Complete Lawn Care & Turf Management</h1>
+      <p class="text-xl text-brand-light max-w-2xl mx-auto opacity-90">
+        Professional, reliable lawn maintenance tailored to your property.
+      </p>
+    </div>
+  </section>
+
+  <!-- Service Details -->
+  <section class="py-20 bg-brand-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        
+        <div class="prose prose-lg text-brand-dark">
+          <h2 class="text-3xl font-heading font-bold text-brand-dark mb-4">A Cut Above The Rest</h2>
+          <p class="text-brand-earth mb-6">
+            Your lawn is the foundation of your property's curb appeal. Led by our expert team, Best In Lawn provides customized maintenance plans designed specifically for our local climate. We don't just cut grass; we utilize professional-grade equipment and advanced techniques to ensure your lawn stays thick, green, and resilient all season long.
+          </p>
+          
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start">
+              <svg class="w-6 h-6 text-brand-leaf mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <div>
+                <strong class="block text-brand-dark">Precision Mowing & Trimming</strong>
+                <span class="text-brand-earth text-sm">Scheduled weekly maintenance using meticulously maintained equipment for a clean, even cut.</span>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-6 h-6 text-brand-leaf mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <div>
+                <strong class="block text-brand-dark">Fertilization & Weed Control</strong>
+                <span class="text-brand-earth text-sm">Customized nutrient applications and targeted weed management for deep root growth.</span>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-6 h-6 text-brand-leaf mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <div>
+                <strong class="block text-brand-dark">Seasonal Cleanups</strong>
+                <span class="text-brand-earth text-sm">Comprehensive spring prep and fall leaf removal to protect your turf from winter damage.</span>
+              </div>
+            </li>
+          </ul>
+
+          <a href="/contact" class="inline-block bg-brand-forest text-white px-8 py-3 rounded-md font-medium hover:bg-brand-leaf transition shadow-sm">
+            Request Your Free Estimate
+          </a>
+        </div>
+        
+        <div class="rounded-lg overflow-hidden shadow-xl h-[500px]">
+           <!-- Beautiful placeholder image for lawn care -->
+           <img src="https://images.unsplash.com/photo-1592424001807-160751307d88?q=80&w=1000&auto=format&fit=crop" alt="Freshly mowed lawn" class="w-full h-full object-cover" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>
