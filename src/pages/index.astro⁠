@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = "Professional Lawn & Cabin Care in the Brainerd Lakes Area";
+const description = "Best In Lawn provides premium lawn care, commercial property maintenance, and specialized cabin care across Brainerd, Baxter, Nisswa, and beyond.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="relative bg-brand-dark h-[80vh] min-h-[600px] flex items-center">
+    <div class="absolute inset-0 overflow-hidden">
+      <img 
+        src="https://images.unsplash.com/photo-1558904541-efa843a96f09?q=80&w=2000&auto=format&fit=crop" 
+        alt="Beautifully maintained lake home property" 
+        class="w-full h-full object-cover opacity-40"
+      />
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center md:text-left">
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight mb-6">
+        Your Lawn. <br/>
+        <span class="text-brand-leaf">Your Property.</span> <br/>
+        Our Care.
+      </h1>
+      <p class="text-lg md:text-xl text-brand-light max-w-2xl mb-8 font-medium">
+        Professional lawn and property care throughout the Brainerd Lakes Area. We focus on the details so you can enjoy your time up north.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 md:justify-start justify-center">
+        <a href="/contact" class="bg-brand-leaf text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-emerald-700 transition shadow-lg">
+          Get Your Free Estimate
+        </a>
+        <a href="/services" class="bg-white text-brand-dark px-8 py-4 rounded-md font-semibold text-lg hover:bg-gray-50 transition">
+          View Our Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-sm font-bold text-brand-leaf tracking-wider uppercase mb-2">Dedicated Cabin Care</h2>
+          <h3 class="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6">
+            Peace of mind for your Lakes Area retreat.
+          </h3>
+          <p class="text-brand-earth text-lg mb-6 leading-relaxed">
+            Your cabin should be a place of relaxation, not a weekend chore list. We specialize in year-round property management and exterior cabin care for second homes, ensuring your property is pristine when you arrive and secure when you leave.
+          </p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center text-brand-dark font-medium">
+              <svg class="w-5 h-5 text-brand-leaf mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Seasonal Cleanups & Preparation
+            </li>
+            <li class="flex items-center text-brand-dark font-medium">
+              <svg class="w-5 h-5 text-brand-leaf mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Consistent Lawn Maintenance
+            </li>
+            <li class="flex items-center text-brand-dark font-medium">
+              <svg class="w-5 h-5 text-brand-leaf mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Exterior Property Monitoring
+            </li>
+          </ul>
+        </div>
+        <div class="relative h-96 rounded-lg overflow-hidden shadow-xl">
+          <img 
+            src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?q=80&w=1000&auto=format&fit=crop" 
+            alt="Maintained lakeside cabin in the woods" 
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
