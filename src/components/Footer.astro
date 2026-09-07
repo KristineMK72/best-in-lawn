@@ -1,46 +1,122 @@
 ---
 const currentYear = new Date().getFullYear();
 ---
-<!-- Using a vibrant green to match the original branding -->
-<footer class="bg-[#1b6b2b] text-white py-16 mt-auto border-t-8 border-black">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-center md:text-left mb-12">
-      <!-- Locations column matching the original site -->
-      <div class="flex flex-col items-center">
-        <h3 class="text-2xl font-bold uppercase tracking-widest mb-6 inline-block border-b-4 border-white pb-1">Locations</h3>
-        <div class="grid grid-cols-2 gap-x-12 gap-y-4 text-lg font-bold">
-          <div>&bull; MOORHEAD</div>
-          <div>&bull; HORACE</div>
-          <div>&bull; FARGO</div>
-          <div>&bull; HARWOOD</div>
-          <div>&bull; WEST FARGO</div>
-          <div>&bull; AND MORE</div>
+
+<footer class="bg-[#173b2a] text-white">
+  <div class="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8">
+
+    <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+
+      <!-- Brand -->
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-white text-[#173b2a]">
+            <span class="font-serif text-xl">B</span>
+          </div>
+
+          <div>
+            <div class="font-serif text-2xl font-bold">
+              Best In Lawn
+            </div>
+
+            <div class="mt-1 text-xs uppercase tracking-[0.18em] text-white/60">
+              Lawn • Cabin • Commercial
+            </div>
+          </div>
         </div>
+
+        <p class="mt-6 max-w-md leading-7 text-white/70">
+          Professional lawn and property care with attention to detail,
+          dependable service, and a commitment to helping your property
+          look its best.
+        </p>
+
+        <a
+          href="/contact"
+          class="mt-7 inline-flex rounded-full bg-white px-6 py-3 font-bold text-[#173b2a] transition hover:-translate-y-0.5 hover:bg-[#f7f4ec]"
+        >
+          Get a Free Estimate
+        </a>
       </div>
 
-      <!-- Contact column matching the original site -->
-      <div class="flex flex-col items-center">
-        <h3 class="text-2xl font-bold uppercase tracking-widest mb-6 inline-block border-b-4 border-white pb-1">Contact</h3>
-        <div class="space-y-4 text-lg font-bold text-center">
-          <a href="mailto:bestinlawn@gmail.com" class="block hover:text-gray-200 border-b-2 border-white pb-1">BESTINLAWN@GMAIL.COM</a>
-          <a href="tel:7012386904" class="block hover:text-gray-200 border-b-2 border-white pb-1">(701) 238-6904</a>
-        </div>
-        
-        <!-- Social Icons Placeholder -->
-        <div class="flex space-x-4 mt-8">
-          <a href="#" class="w-12 h-12 border-2 border-white rounded-md flex items-center justify-center hover:bg-white hover:text-[#1b6b2b] transition">
-            <span class="font-bold text-xl">f</span>
-          </a>
-          <a href="#" class="w-12 h-12 border-2 border-white rounded-md flex items-center justify-center hover:bg-white hover:text-[#1b6b2b] transition">
-            <span class="font-bold text-xl">IG</span>
-          </a>
-        </div>
+      <!-- Services -->
+      <div>
+        <h3 class="text-lg font-bold">
+          Services
+        </h3>
+
+        <ul class="mt-5 space-y-3 text-sm text-white/70">
+          <li>
+            <a href="/services/lawn-care" class="transition hover:text-white">
+              Lawn Care
+            </a>
+          </li>
+
+          <li>
+            <a href="/services/cabin-care" class="transition hover:text-white">
+              Cabin Care
+            </a>
+          </li>
+
+          <li>
+            <a href="/services/commercial" class="transition hover:text-white">
+              Commercial Properties
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Areas -->
+      <div>
+        <h3 class="text-lg font-bold">
+          Service Areas
+        </h3>
+
+        <ul class="mt-5 space-y-3 text-sm text-white/70">
+          <li>Fargo</li>
+          <li>Moorhead</li>
+          <li>West Fargo</li>
+          <li>Horace</li>
+          <li>Harwood</li>
+          <li>Lakes Area</li>
+        </ul>
       </div>
     </div>
 
-    <div class="text-sm font-medium text-center mt-8 pt-8 border-t border-white/30">
-      &copy; {currentYear} Best In Lawn. All rights reserved.
+    <!-- Contact -->
+    <div class="mt-14 grid gap-6 border-t border-white/10 pt-8 sm:grid-cols-2">
+
+      <div>
+        <p class="text-xs font-bold uppercase tracking-[0.15em] text-white/50">
+          Contact
+        </p>
+
+        <div class="mt-3 flex flex-col gap-2 text-sm">
+          <a
+            href="tel:7012386904"
+            class="font-semibold transition hover:text-[#c7a45b]"
+          >
+            (701) 238-6904
+          </a>
+
+          <a
+            href="mailto:bestinlawn@gmail.com"
+            class="text-white/70 transition hover:text-white"
+          >
+            bestinlawn@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div class="sm:text-right">
+        <p class="text-sm text-white/50">
+          © {currentYear} Best In Lawn. All rights reserved.
+        </p>
+
+        <p class="mt-2 text-xs text-white/40">
+          Professional property care in the Fargo–Moorhead area.
+        </p>
+      </div>
     </div>
   </div>
 </footer>
