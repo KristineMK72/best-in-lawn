@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = "Professional Lawn & Cabin Care | Best In Lawn";
+const description = "Best In Lawn provides premium lawn care, commercial property maintenance, and specialized cabin care across the region.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="relative bg-[#0f172a] h-[80vh] min-h-[600px] flex items-center">
+    <div class="absolute inset-0 overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1558904541-efa843a96f09?q=80&w=2000&auto=format&fit=crop" alt="Maintained property" class="w-full h-full object-cover opacity-40" />
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 w-full text-center md:text-left">
+      <h1 class="text-4xl md:text-6xl font-heading font-bold text-white mb-6">
+        Your Lawn. <br/>
+        <span class="text-[#059669]">Your Property.</span> <br/>
+        Our Care.
+      </h1>
+      <p class="text-lg md:text-xl text-[#f8fafc] max-w-2xl mb-8 font-medium">
+        Professional lawn and property care. We focus on the details so you can enjoy your weekend.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
