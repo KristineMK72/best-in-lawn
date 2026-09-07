@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = "Commercial Lawn Care & Property Maintenance | Best In Lawn";
+const description = "Keep your business looking pristine. Reliable, customized commercial lawn maintenance and property care programs. Fully insured.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="bg-brand-dark py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Commercial Property Maintenance</h1>
+      <p class="text-xl text-brand-light max-w-2xl mx-auto opacity-90">
+        Elevate your business's first impression with reliable, professional groundskeeping.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <h2 class="text-3xl font-heading font-bold text-brand-dark mb-6">The Commercial Advantage</h2>
+        <p class="text-brand-earth text-lg leading-relaxed">
+          The exterior of your commercial property speaks volumes about your business before a client ever walks through the door. We partner with local businesses, HOAs, and property managers to deliver consistent, high-standard exterior care. We are fully insured and pride ourselves on efficient, low-impact service that never disrupts your daily operations.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-brand-light p-8 rounded-lg border border-gray-100">
+          <h3 class="text-xl font-bold text-brand-dark mb-3">Custom Programs</h3>
+          <p class="text-brand-earth text-sm">Tailored maintenance schedules that fit your operating hours and specific property needs perfectly.</p>
+        </div>
+        <div class="bg-brand-light p-8 rounded-lg border border-gray-100">
+          <h3 class="text-xl font-bold text-brand-dark mb-3">Clean & Professional</h3>
+          <p class="text-brand-earth text-sm">Sharp edging, clear walkways, and meticulously maintained green spaces that impress clients.</p>
+        </div>
+        <div class="bg-brand-light p-8 rounded-lg border border-gray-100">
+          <h3 class="text-xl font-bold text-brand-dark mb-3">Reliable Partner</h3>
+          <p class="text-brand-earth text-sm">Predictable service schedules and transparent communication. Never wonder when the landscapers will arrive.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <a href="/contact" class="inline-block bg-brand-leaf text-white px-8 py-3 rounded-md font-medium hover:bg-emerald-700 transition shadow-lg">
+          Get a Commercial Quote
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
